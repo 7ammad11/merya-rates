@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T13:45:05.650Z",
+  "generated_at": "2026-10-20T14:02:27.093Z",
   "source": "Hotelogix Web Booking Engine (booking.staygrid.com)",
   "branches": {
     "shafa": {
@@ -18,7 +18,7 @@
           "cheapest": null,
           "rooms": [],
           "debug": {
-            "url": "https://booking.staygrid.com/webv2/index/selectroom/key/e26dfabfca8b01ef86626f098f43a32317925039086ad7706495e9f____WUFYN",
+            "url": "https://booking.staygrid.com/webv2/index/selectroom/key/e26dfabfca8b01ef86626f098f43a32317925049486ad77474afe4b____WUFYN",
             "page_text": "SAR CORPORATE TRAVEL AGENT GUEST MERYA AL SHAFA BOOK NOW Previous Next Al Shfa242, Taif 26754, Taif, Makkah - 26754, Saudi Arabia Map Data 200 m Terms 966127502322 http://Meryahotels.com 24 Hour Room Service Air Conditioning Air Purifiers C"
           }
         },
@@ -29,7 +29,8 @@
           "status": "ok",
           "cheapest": {
             "code": "SUT",
-            "room": "SUT",
+            "room": "Room Only",
+            "name_page": "Room Only",
             "total": 478,
             "per_night": 239,
             "rooms_left": null
@@ -37,49 +38,56 @@
           "rooms": [
             {
               "code": "SUT",
-              "room": "SUT",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 478,
               "per_night": 239,
               "rooms_left": null
             },
             {
               "code": "SUTWVB",
-              "room": "SUTWVB",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 598,
               "per_night": 299,
               "rooms_left": 2
             },
             {
               "code": "JVILA",
-              "room": "JVILA",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 618,
               "per_night": 309,
               "rooms_left": null
             },
             {
               "code": "SUTWT",
-              "room": "SUTWT",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 718,
               "per_night": 359,
               "rooms_left": 1
             },
             {
               "code": "TBS",
-              "room": "TBS",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 818,
               "per_night": 409,
               "rooms_left": 3
             },
             {
               "code": "TBSVB",
-              "room": "TBSVB",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 918,
               "per_night": 459,
               "rooms_left": null
             },
             {
               "code": "HANDI",
-              "room": "HANDI",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 918,
               "per_night": 459,
               "rooms_left": 1
@@ -93,7 +101,8 @@
           "status": "ok",
           "cheapest": {
             "code": "SUT",
-            "room": "SUT",
+            "room": "Room Only",
+            "name_page": "Room Only",
             "total": 478,
             "per_night": 239,
             "rooms_left": null
@@ -101,49 +110,56 @@
           "rooms": [
             {
               "code": "SUT",
-              "room": "SUT",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 478,
               "per_night": 239,
               "rooms_left": null
             },
             {
               "code": "SUTWVB",
-              "room": "SUTWVB",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 598,
               "per_night": 299,
               "rooms_left": 3
             },
             {
               "code": "JVILA",
-              "room": "JVILA",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 618,
               "per_night": 309,
               "rooms_left": null
             },
             {
               "code": "SUTWT",
-              "room": "SUTWT",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 718,
               "per_night": 359,
               "rooms_left": 1
             },
             {
               "code": "TBS",
-              "room": "TBS",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 818,
               "per_night": 409,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
-              "room": "TBSVB",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 918,
               "per_night": 459,
               "rooms_left": null
             },
             {
               "code": "HANDI",
-              "room": "HANDI",
+              "room": "Room Only",
+              "name_page": "Room Only",
               "total": 918,
               "per_night": 459,
               "rooms_left": 1
@@ -168,6 +184,7 @@
           "cheapest": {
             "code": "OBA",
             "room": "جناح",
+            "name_page": "Web Rates",
             "total": 212.59,
             "per_night": 212.59,
             "rooms_left": 2
@@ -176,6 +193,7 @@
             {
               "code": "OBA",
               "room": "جناح",
+              "name_page": "Web Rates",
               "total": 212.59,
               "per_night": 212.59,
               "rooms_left": 2
@@ -183,6 +201,7 @@
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "Web Rates",
               "total": 238.2,
               "per_night": 238.2,
               "rooms_left": 3
@@ -190,6 +209,7 @@
             {
               "code": "TBA",
               "room": "جناح غرفتين",
+              "name_page": "Web Rates",
               "total": 426.03,
               "per_night": 426.03,
               "rooms_left": 1
@@ -197,6 +217,7 @@
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
+              "name_page": "Web Rates",
               "total": 477.26,
               "per_night": 477.26,
               "rooms_left": 1
@@ -204,6 +225,7 @@
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Web Rates",
               "total": 502.87,
               "per_night": 502.87,
               "rooms_left": 2
@@ -218,6 +240,7 @@
           "cheapest": {
             "code": "OBA",
             "room": "جناح",
+            "name_page": "Web Rates",
             "total": 437.7,
             "per_night": 218.85,
             "rooms_left": null
@@ -226,6 +249,7 @@
             {
               "code": "OBA",
               "room": "جناح",
+              "name_page": "Web Rates",
               "total": 437.7,
               "per_night": 218.85,
               "rooms_left": null
@@ -233,6 +257,7 @@
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "Web Rates",
               "total": 490.44,
               "per_night": 245.22,
               "rooms_left": null
@@ -240,6 +265,7 @@
             {
               "code": "TBA",
               "room": "جناح غرفتين",
+              "name_page": "Web Rates",
               "total": 877.16,
               "per_night": 438.58,
               "rooms_left": 2
@@ -247,6 +273,7 @@
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
+              "name_page": "Web Rates",
               "total": 982.63,
               "per_night": 491.32,
               "rooms_left": 1
@@ -254,6 +281,7 @@
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Web Rates",
               "total": 1070.53,
               "per_night": 535.27,
               "rooms_left": 1
@@ -268,6 +296,7 @@
           "cheapest": {
             "code": "STD",
             "room": "ستوديو",
+            "name_page": "Web Rates",
             "total": 375.54,
             "per_night": 187.77,
             "rooms_left": 2
@@ -276,6 +305,7 @@
             {
               "code": "STD",
               "room": "ستوديو",
+              "name_page": "Web Rates",
               "total": 375.54,
               "per_night": 187.77,
               "rooms_left": 2
@@ -283,6 +313,7 @@
             {
               "code": "OBA",
               "room": "جناح",
+              "name_page": "Web Rates",
               "total": 441.53,
               "per_night": 220.77,
               "rooms_left": null
@@ -290,6 +321,7 @@
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "Web Rates",
               "total": 481.3,
               "per_night": 240.65,
               "rooms_left": null
@@ -297,6 +329,7 @@
             {
               "code": "TBA",
               "room": "جناح غرفتين",
+              "name_page": "Web Rates",
               "total": 779.53,
               "per_night": 389.77,
               "rooms_left": 3
@@ -304,6 +337,7 @@
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
+              "name_page": "Web Rates",
               "total": 845.97,
               "per_night": 422.99,
               "rooms_left": 1
@@ -311,6 +345,7 @@
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Web Rates",
               "total": 866.08,
               "per_night": 433.04,
               "rooms_left": 2
@@ -318,6 +353,7 @@
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Web Rates",
               "total": 945.03,
               "per_night": 472.52,
               "rooms_left": 1
