@@ -107,6 +107,25 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
   }
 
   const raw = await page.evaluate(() => {
+    // the room type's display name, taken from the page itself so new
+    // room types never need a code added to ROOM_NAMES by hand
+    function pickName(blk, sq) {
+      const cands = [];
+      if (sq) cands.push(sq.textContent);
+      blk.querySelectorAll('h1,h2,h3,h4,h5,.room-name,.accomodation-name,[class*="room-name"],[class*="roomName"],[class*="room_type"]')
+        .forEach(el => cands.push(el.textContent));
+      for (const c of cands) {
+        const t = (c || '').replace(/\s+/g, ' ').trim();
+        if (t.length < 3 || t.length > 70) continue;
+        if (/^[\d.,\s]+$/.test(t)) continue;              // bare numbers
+        if (/^(SAR|SR)\b/i.test(t)) continue;              // prices
+        if (/room\(s\)\s*left/i.test(t)) continue;        // availability note
+        if (/book\s*now|select|reserve/i.test(t)) continue; // buttons
+        return t;
+      }
+      return null;
+    }
+
     const out = [];
     document.querySelectorAll('.accomodation-rate').forEach(blk => {
       const sq = blk.querySelector('[roomseq]');
@@ -117,6 +136,7 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
       const left = (blk.innerText.match(/(\d+)\s*room\(s\)\s*left/) || [])[1];
       out.push({
         seq: sq.getAttribute('roomseq'),
+        name_page: pickName(blk, sq),
         total: parseFloat(m[1].replace(/,/g, '')),
         rooms_left: left ? parseInt(left, 10) : null
       });
@@ -134,7 +154,9 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
     const code = decodeSeq(r.seq);
     const row = {
       code,
-      room: ROOM_NAMES[code] || code,
+      // verified Arabic name wins; otherwise whatever the engine displays
+      room: ROOM_NAMES[code] || r.name_page || code,
+      name_page: r.name_page || null,
       total: round2(r.total),
       per_night: round2(r.total / nights),
       rooms_left: r.rooms_left
