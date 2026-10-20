@@ -15,54 +15,55 @@ const ROOM_NAMES = {
 const BASE = 'https://booking.staygrid.com/webv2/index/index/key/';
 
 function addDays(n) {
-  const d = new Date(Date.now() + n * 86400000);
-  return d.toISOString().slice(0, 10);
+  return new Date(Date.now() + n * 86400000).toISOString().slice(0, 10);
 }
 
 async function scrapeBranch(browser, code, checkin, checkout) {
   const b = BRANCHES[code];
-  const ctx = await browser.newContext({ locale: 'en-US' });
+  const ctx = await browser.newContext({ locale: 'en-US', viewport: { width: 1440, height: 2200 } });
   const page = await ctx.newPage();
   const nights = Math.round((Date.parse(checkout) - Date.parse(checkin)) / 86400000);
 
-  await page.goto(BASE + b.key, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  try {
+    await page.goto(BASE + b.key, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
-  await page.evaluate(([ci, co]) => {
-    const f = Array.from(document.forms).find(x => x.elements['checkInMysql']);
-    f.elements['checkInMysql'].value = ci;
-    f.elements['checkOutMysql'].value = co;
-    f.submit();
-  }, [checkin, checkout]);
+    await page.evaluate(([ci, co]) => {
+      const f = Array.from(document.forms).find(x => x.elements['checkInMysql']);
+      f.elements['checkInMysql'].value = ci;
+      f.elements['checkOutMysql'].value = co;
+      f.submit();
+    }, [checkin, checkout]);
 
-  await page.waitForLoadState('domcontentloaded', { timeout: 60000 });
-  await page.waitForSelector('[roomseq]', { timeout: 45000 });
+    await page.waitForLoadState('networkidle', { timeout: 60000 }).catch(() => {});
+    await page.waitForSelector('[roomseq]', { state: 'attached', timeout: 45000 });
 
-  const rows = await page.evaluate(() => {
-    const out = [];
-    document.querySelectorAll('.accomodation-rate').forEach(blk => {
-      const sq = blk.querySelector('[roomseq]');
-      const pr = blk.querySelector('.pax-price.price');
-      if (!sq || !pr) return;
-      const m = (pr.textContent || '').match(/([\d,]+\.\d{2})/);
-      if (!m) return;
-      const left = (blk.innerText.match(/(\d+)\s*room\(s\)\s*left/) || [])[1];
-      out.push({ seq: sq.getAttribute('roomseq'), total: parseFloat(m[1].replace(/,/g, '')), rooms_left: left ? parseInt(left, 10) : null });
+    const rows = await page.evaluate(() => {
+      const out = [];
+      document.querySelectorAll('.accomodation-rate').forEach(blk => {
+        const sq = blk.querySelector('[roomseq]');
+        const pr = blk.querySelector('.pax-price.price');
+        if (!sq || !pr) return;
+        const m = (pr.textContent || '').match(/([\d,]+\.\d{2})/);
+        if (!m) return;
+        const left = (blk.innerText.match(/(\d+)\s*room\(s\)\s*left/) || [])[1];
+        out.push({ seq: sq.getAttribute('roomseq'), total: parseFloat(m[1].replace(/,/g, '')), rooms_left: left ? parseInt(left, 10) : null });
+      });
+      return out;
     });
-    return out;
-  });
 
-  await page.screenshot({ path: 'shot-' + code + '.png', fullPage: false });
-  await ctx.close();
+    const best = {};
+    for (const r of rows) {
+      const key = Buffer.from(r.seq.replace(/-/g, '+').replace(/_/g, '/') + '===', 'base64').toString('utf8').replace(/\u0000+$/, '');
+      const row = { code: key, room: ROOM_NAMES[key] || key, total: Math.round(r.total * 100) / 100, per_night: Math.round((r.total / nights) * 100) / 100, rooms_left: r.rooms_left };
+      if (!best[key] || row.total < best[key].total) best[key] = row;
+    }
+    const list = Object.keys(best).map(k => best[k]).sort((x, y) => x.total - y.total);
 
-  const best = {};
-  for (const r of rows) {
-    const key = Buffer.from(r.seq.replace(/-/g, '+').replace(/_/g, '/') + '===', 'base64').toString('utf8').replace(/\u0000+$/, '');
-    const row = { code: key, room: ROOM_NAMES[key] || key, total: Math.round(r.total * 100) / 100, per_night: Math.round((r.total / nights) * 100) / 100, rooms_left: r.rooms_left };
-    if (!best[key] || row.total < best[key].total) best[key] = row;
+    return { branch: code, hotel: b.name, hotelId: b.hotelId, checkin, checkout, nights, currency: 'SAR', tax: 'incl', rooms: list, cheapest: list[0] || null };
+  } finally {
+    await page.screenshot({ path: 'shot-' + code + '.png', fullPage: true }).catch(() => {});
+    await ctx.close();
   }
-  const list = Object.keys(best).map(k => best[k]).sort((x, y) => x.total - y.total);
-
-  return { branch: code, hotel: b.name, hotelId: b.hotelId, checkin, checkout, nights, currency: 'SAR', tax: 'incl', rooms: list, cheapest: list[0] || null };
 }
 
 (async () => {
@@ -85,5 +86,5 @@ async function scrapeBranch(browser, code, checkin, checkout) {
   await browser.close();
   fs.writeFileSync('rates.json', JSON.stringify(result, null, 2));
   console.log(JSON.stringify(result, null, 2));
-  if (failed) { console.error('FAILED branches: ' + failed); process.exit(1); }
+  if (failed) console.error('FAILED branches: ' + failed);
 })();
