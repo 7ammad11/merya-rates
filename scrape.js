@@ -39,7 +39,17 @@ const ROOM_NAMES = {
   TBA:   'جناح غرفتين',
   TBSS:  'جناح غرفتين سوبيريور',
   TBACV: 'جناح غرفتين مع إطلالة على المدينة',
-  TBSSC: 'جناح غرفتين سوبيريور مع إطلالة على المدينة'
+  TBSSC: 'جناح غرفتين سوبيريور مع إطلالة على المدينة',
+
+  // Al Shafa — translated from the engine's own English labels.
+  // Replace any line with the official Arabic name if it differs.
+  SUT:    'جناح',
+  SUTWVB: 'جناح بإطلالة وشرفة',
+  JVILA:  'فيلا جونيور بإطلالة وشرفة',
+  SUTWT:  'جناح بتراس',
+  TBS:    'جناح غرفتين',
+  TBSVB:  'جناح غرفتين بإطلالة وشرفة',
+  HANDI:  'جناح غرفتين لذوي الاحتياجات الخاصة بإطلالة وشرفة'
 };
 
 // windows to price each run: { in: days from today, nights: n }
@@ -109,19 +119,22 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
   const raw = await page.evaluate(() => {
     // the room type's display name, taken from the page itself so new
     // room types never need a code added to ROOM_NAMES by hand
-    function pickName(blk, sq) {
-      const cands = [];
-      if (sq) cands.push(sq.textContent);
-      blk.querySelectorAll('h1,h2,h3,h4,h5,.room-name,.accomodation-name,[class*="room-name"],[class*="roomName"],[class*="room_type"]')
-        .forEach(el => cands.push(el.textContent));
-      for (const c of cands) {
-        const t = (c || '').replace(/\s+/g, ' ').trim();
-        if (t.length < 3 || t.length > 70) continue;
-        if (/^[\d.,\s]+$/.test(t)) continue;              // bare numbers
-        if (/^(SAR|SR)\b/i.test(t)) continue;              // prices
-        if (/room\(s\)\s*left/i.test(t)) continue;        // availability note
-        if (/book\s*now|select|reserve/i.test(t)) continue; // buttons
-        return t;
+    // the room type sits in the "Accommodation Type" column as a link in an
+    // ancestor of the rate block (the block's own h4 is the RATE PLAN name,
+    // e.g. "Room Only" — not what we want)
+    function pickName(blk) {
+      let p = blk;
+      for (let lvl = 0; lvl < 6 && p; lvl++) {
+        p = p.parentElement;
+        if (!p) break;
+        for (const a of p.querySelectorAll('a')) {
+          const t = (a.textContent || '').replace(/\s+/g, ' ').trim();
+          if (t.length < 3 || t.length > 60) continue;
+          if (/^[\d.,\s]+$/.test(t)) continue;
+          if (/^(SAR|SR)\b/i.test(t)) continue;
+          if (/view all|book\s*now|select|reserve|login|sign/i.test(t)) continue;
+          return t;
+        }
       }
       return null;
     }
@@ -136,7 +149,7 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
       const left = (blk.innerText.match(/(\d+)\s*room\(s\)\s*left/) || [])[1];
       out.push({
         seq: sq.getAttribute('roomseq'),
-        name_page: pickName(blk, sq),
+        name_page: pickName(blk),
         total: parseFloat(m[1].replace(/,/g, '')),
         rooms_left: left ? parseInt(left, 10) : null
       });
