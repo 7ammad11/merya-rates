@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-10-20T13:04:43.959Z",
+  "branches": {
+    "shafa": {
+      "branch": "shafa",
+      "error": "TimeoutError: page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n  - waiting for locator('[roomseq]')\n"
+    },
+    "zahra": {
+      "branch": "zahra",
+      "hotel": "Merya Al Zahra",
+      "hotelId": 77010,
+      "checkin": "2026-11-10",
+      "checkout": "2026-11-12",
+      "nights": 2,
+      "currency": "SAR",
+      "tax": "incl",
+      "rooms": [
+        {
+          "code": "STD",
+          "room": "ستوديو",
+          "total": 375.54,
+          "per_night": 187.77,
+          "rooms_left": 2
+        },
+        {
+          "code": "OBA",
+          "room": "جناح",
+          "total": 441.53,
+          "per_night": 220.77,
+          "rooms_left": null
+        },
+        {
+          "code": "OBACV",
+          "room": "جناح غرفة نوم مع إطلالة على المدينة",
+          "total": 481.3,
+          "per_night": 240.65,
+          "rooms_left": null
+        },
+        {
+          "code": "TBA",
+          "room": "جناح غرفتين",
+          "total": 779.53,
+          "per_night": 389.77,
+          "rooms_left": 3
+        },
+        {
+          "code": "TBSS",
+          "room": "جناح غرفتين سوبيريور",
+          "total": 845.97,
+          "per_night": 422.99,
+          "rooms_left": 1
+        },
+        {
+          "code": "TBACV",
+          "room": "جناح غرفتين مع إطلالة على المدينة",
+          "total": 866.08,
+          "per_night": 433.04,
+          "rooms_left": 2
+        },
+        {
+          "code": "TBSSC",
+          "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+          "total": 945.03,
+          "per_night": 472.52,
+          "rooms_left": 1
+        }
+      ],
+      "cheapest": {
+        "code": "STD",
+        "room": "ستوديو",
+        "total": 375.54,
+        "per_night": 187.77,
+        "rooms_left": 2
+      }
+    }
+  }
+}
