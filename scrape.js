@@ -52,12 +52,13 @@ const ROOM_NAMES = {
   HANDI:  'جناح غرفتين لذوي الاحتياجات الخاصة بإطلالة وشرفة'
 };
 
-// windows to price each run: { in: days from today, nights: n }
-const WINDOWS = [
-  { in: 1,  nights: 1 },
-  { in: 7,  nights: 2 },
-  { in: 21, nights: 2 }
-];
+// windows to price each run: every single night from tomorrow out to
+// DAYS_AHEAD, so the agent can quote the exact night a guest asks about
+const DAYS_AHEAD = 60;
+const WINDOWS = Array.from({ length: DAYS_AHEAD }, (_, i) => ({ in: i + 1, nights: 1 }));
+
+// parallel browser contexts per branch (each one holds its own engine session)
+const WORKERS = 4;
 
 // ───────────────────────────── helpers ─────────────────────────────
 
@@ -108,9 +109,9 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
     }
   }
 
-  await page.screenshot({ path: 'shot-' + shotTag + '.png', fullPage: true }).catch(() => {});
-
   if (!(await page.$('[roomseq]'))) {
+    // screenshots only for empty results — 120 full-page shots per run is too many
+    await page.screenshot({ path: 'shot-' + shotTag + '.png', fullPage: true }).catch(() => {});
     const txt = await page.evaluate(() =>
       document.body.innerText.replace(/\s+/g, ' ').slice(0, 240));
     return { rooms: [], note: 'no_rooms', url: page.url().slice(0, 120), page_text: txt };
@@ -181,33 +182,46 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
   return { rooms, note: rooms.length ? 'ok' : 'no_rooms', url: page.url().slice(0, 120) };
 }
 
+async function priceWindow(browser, b, code, w) {
+  const checkin = ymd(addDays(w.in));
+  const checkout = ymd(addDays(w.in + w.nights));
+  const tag = code + '-' + w.in;
+  let err;
+
+  // one retry: with this many searches a single timeout is expected now and then
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const ctx = await browser.newContext({ viewport: { width: 1440, height: 2400 } });
+    try {
+      const page = await ctx.newPage();
+      const r = await searchWindow(page, b, checkin, checkout, tag);
+      return {
+        checkin, checkout, nights: w.nights,
+        status: r.note,
+        cheapest: r.rooms[0] || null,
+        rooms: r.rooms,
+        debug: r.note === 'ok' ? undefined : { url: r.url, page_text: r.page_text }
+      };
+    } catch (e) {
+      err = e;
+    } finally {
+      await ctx.close();
+    }
+  }
+  return { checkin, checkout, nights: w.nights, status: 'error', error: String(err).slice(0, 200), rooms: [] };
+}
+
 async function scrapeBranch(browser, code) {
   const b = BRANCHES[code];
-  const ctx = await browser.newContext({ viewport: { width: 1440, height: 2400 } });
-  const page = await ctx.newPage();
-  const windows = [];
+  const windows = new Array(WINDOWS.length);
+  let next = 0;
 
-  try {
-    for (const w of WINDOWS) {
-      const checkin = ymd(addDays(w.in));
-      const checkout = ymd(addDays(w.in + w.nights));
-      const tag = code + '-' + w.in;
-      try {
-        const r = await searchWindow(page, b, checkin, checkout, tag);
-        windows.push({
-          checkin, checkout, nights: w.nights,
-          status: r.note,
-          cheapest: r.rooms[0] || null,
-          rooms: r.rooms,
-          debug: r.note === 'ok' ? undefined : { url: r.url, page_text: r.page_text }
-        });
-      } catch (e) {
-        windows.push({ checkin, checkout, nights: w.nights, status: 'error', error: String(e).slice(0, 200), rooms: [] });
-      }
+  async function worker() {
+    while (next < WINDOWS.length) {
+      const i = next++;
+      windows[i] = await priceWindow(browser, b, code, WINDOWS[i]);
     }
-  } finally {
-    await ctx.close();
   }
+  await Promise.all(Array.from({ length: WORKERS }, worker));
 
   return {
     branch: code,
@@ -230,13 +244,14 @@ async function scrapeBranch(browser, code) {
     branches: {}
   };
 
-  for (const code of Object.keys(BRANCHES)) {
+  // both branches at once (WORKERS contexts each)
+  await Promise.all(Object.keys(BRANCHES).map(async code => {
     try {
       out.branches[code] = await scrapeBranch(browser, code);
     } catch (e) {
       out.branches[code] = { branch: code, status: 'error', error: String(e).slice(0, 300), windows: [] };
     }
-  }
+  }));
 
   await browser.close();
 
