@@ -6,6 +6,10 @@ on:
     # finish before Respond.io re-syncs the pages at 09:00 Riyadh
     - cron: '0 1 * * *'
   workflow_dispatch:
+    inputs:
+      days:
+        description: 'Nights ahead to price (blank = 60)'
+        required: false
 
 jobs:
   scrape:
@@ -26,6 +30,8 @@ jobs:
       - name: Scrape rates
         id: scrape
         continue-on-error: true
+        env:
+          DAYS_AHEAD: ${{ inputs.days }}
         run: node scrape.js
 
       - name: Upload screenshots
