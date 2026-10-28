@@ -41,20 +41,21 @@ const ROOM_NAMES = {
   TBACV: 'جناح غرفتين مع إطلالة على المدينة',
   TBSSC: 'جناح غرفتين سوبيريور مع إطلالة على المدينة',
 
-  // Al Shafa — translated from the engine's own English labels.
-  // Replace any line with the official Arabic name if it differs.
-  SUT:    'جناح',
-  SUTWVB: 'جناح بإطلالة وشرفة',
-  JVILA:  'فيلا جونيور بإطلالة وشرفة',
-  SUTWT:  'جناح بتراس',
-  TBS:    'جناح غرفتين',
-  TBSVB:  'جناح غرفتين بإطلالة وشرفة',
-  HANDI:  'جناح غرفتين لذوي الاحتياجات الخاصة بإطلالة وشرفة'
+  // Al Shafa — the names the Respond.io agent's instructions use,
+  // confirmed by the owner 2026-10-28 (JVILA is the two-storey villa)
+  SUT:    'جناح من غرفة نوم وصالة',
+  SUTWVB: 'جناح من غرفة نوم وصالة مع بلكونة وإطلالة',
+  JVILA:  'فيلا دورين مع بلكونة وإطلالة',
+  SUTWT:  'جناح من غرفة نوم وصالة مع تراس',
+  TBS:    'جناح من غرفتين نوم وصالة',
+  TBSVB:  'جناح من غرفتين نوم وصالة مع بلكونة وإطلالة',
+  HANDI:  'جناح من غرفتين نوم وصالة مع بلكونة وإطلالة لذوي الاحتياجات الخاصة'
 };
 
 // windows to price each run: every single night from tomorrow out to
 // DAYS_AHEAD, so the agent can quote the exact night a guest asks about
-const DAYS_AHEAD = 60;
+// DAYS_AHEAD env (workflow input) allows a short test run
+const DAYS_AHEAD = parseInt(process.env.DAYS_AHEAD, 10) || 60;
 const WINDOWS = Array.from({ length: DAYS_AHEAD }, (_, i) => ({ in: i + 1, nights: 1 }));
 
 // one search at a time: parallel searches made the engine return empty room
@@ -99,6 +100,8 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
   }, [checkin, checkout]);
 
   await page.waitForLoadState('networkidle', { timeout: 60000 }).catch(() => {});
+  // the room list renders after the network goes quiet on a cold session
+  await page.waitForSelector('[roomseq]', { timeout: 20000 }).catch(() => {});
 
   // some properties only render the room list behind an explicit hotel filter
   if (!(await page.$('[roomseq]'))) {
@@ -107,6 +110,7 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
       await page.goto(u.replace(/\/$/, '') + '/filterHotel/' + b.hotelId,
         { waitUntil: 'domcontentloaded', timeout: 60000 });
       await page.waitForLoadState('networkidle', { timeout: 45000 }).catch(() => {});
+      await page.waitForSelector('[roomseq]', { timeout: 20000 }).catch(() => {});
     }
   }
 
@@ -183,32 +187,17 @@ async function searchWindow(page, b, checkin, checkout, shotTag) {
   return { rooms, note: rooms.length ? 'ok' : 'no_rooms', url: page.url().slice(0, 120) };
 }
 
-async function priceWindow(browser, b, code, w) {
+async function priceWindow(page, b, code, w) {
   const checkin = ymd(addDays(w.in));
   const checkout = ymd(addDays(w.in + w.nights));
-  const tag = code + '-' + w.in;
-  let err;
-
-  // one retry: with this many searches a single timeout is expected now and then
-  for (let attempt = 0; attempt < 2; attempt++) {
-    const ctx = await browser.newContext({ viewport: { width: 1440, height: 2400 } });
-    try {
-      const page = await ctx.newPage();
-      const r = await searchWindow(page, b, checkin, checkout, tag);
-      return {
-        checkin, checkout, nights: w.nights,
-        status: r.note,
-        cheapest: r.rooms[0] || null,
-        rooms: r.rooms,
-        debug: r.note === 'ok' ? undefined : { url: r.url, page_text: r.page_text }
-      };
-    } catch (e) {
-      err = e;
-    } finally {
-      await ctx.close();
-    }
-  }
-  return { checkin, checkout, nights: w.nights, status: 'error', error: String(err).slice(0, 200), rooms: [] };
+  const r = await searchWindow(page, b, checkin, checkout, code + '-' + w.in);
+  return {
+    checkin, checkout, nights: w.nights,
+    status: r.note,
+    cheapest: r.rooms[0] || null,
+    rooms: r.rooms,
+    debug: r.note === 'ok' ? undefined : { url: r.url, page_text: r.page_text }
+  };
 }
 
 async function scrapeBranch(browser, code) {
@@ -216,10 +205,32 @@ async function scrapeBranch(browser, code) {
   const windows = new Array(WINDOWS.length);
   let next = 0;
 
+  // each worker keeps one page for all its nights (a warm session, as the
+  // original 3-window scraper did); a fresh context per night came back empty
   async function worker() {
-    while (next < WINDOWS.length) {
-      const i = next++;
-      windows[i] = await priceWindow(browser, b, code, WINDOWS[i]);
+    let ctx = await browser.newContext({ viewport: { width: 1440, height: 2400 } });
+    let page = await ctx.newPage();
+    try {
+      while (next < WINDOWS.length) {
+        const i = next++;
+        try {
+          windows[i] = await priceWindow(page, b, code, WINDOWS[i]);
+        } catch (e) {
+          // one retry on a fresh session
+          await ctx.close();
+          ctx = await browser.newContext({ viewport: { width: 1440, height: 2400 } });
+          page = await ctx.newPage();
+          try {
+            windows[i] = await priceWindow(page, b, code, WINDOWS[i]);
+          } catch (e2) {
+            const w = WINDOWS[i];
+            windows[i] = { checkin: ymd(addDays(w.in)), checkout: ymd(addDays(w.in + w.nights)), nights: w.nights,
+              status: 'error', error: String(e2).slice(0, 200), rooms: [] };
+          }
+        }
+      }
+    } finally {
+      await ctx.close();
     }
   }
   await Promise.all(Array.from({ length: WORKERS }, worker));
