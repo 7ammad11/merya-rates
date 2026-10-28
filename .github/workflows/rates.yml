@@ -2,7 +2,9 @@ name: merya-rates
 
 on:
   schedule:
-    - cron: '0 4 * * *'
+    # 01:00 UTC = 04:00 Riyadh; the 120-night scrape takes ~1.5h and must
+    # finish before Respond.io re-syncs the pages at 09:00 Riyadh
+    - cron: '0 1 * * *'
   workflow_dispatch:
 
 jobs:
