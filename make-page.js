@@ -20,6 +20,18 @@ const NAMES = { shafa: 'ميريا الشفا', zahra: 'ميريا الزهرا�
 
 const ORDER = ['shafa', 'zahra'];
 
+// official Arabic unit names (as in the agent's instructions); wins over
+// whatever name rates.json carries, so a rename shows up without a re-scrape
+const UNIT_NAMES = {
+  SUT:    'جناح من غرفة نوم وصالة',
+  SUTWVB: 'جناح من غرفة نوم وصالة مع بلكونة وإطلالة',
+  JVILA:  'فيلا دورين مع بلكونة وإطلالة',
+  SUTWT:  'جناح من غرفة نوم وصالة مع تراس',
+  TBS:    'جناح من غرفتين نوم وصالة',
+  TBSVB:  'جناح من غرفتين نوم وصالة مع بلكونة وإطلالة',
+  HANDI:  'جناح من غرفتين نوم وصالة مع بلكونة وإطلالة لذوي الاحتياجات الخاصة'
+};
+
 const DAYS = ['الأحد', 'الاثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
 const MONTHS = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو',
   'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
@@ -77,9 +89,9 @@ function header(data) {
 
 function rules(name) {
   return '<div class="note">\n<p><strong>تعليمات استخدام أسعار ' + esc(name) + ':</strong></p>\n<ul>\n' +
-    '<li>اسأل العميل عن تاريخ الدخول والخروج قبل ذكر أي سعر، وأكّد معه التاريخ الكامل.</li>\n' +
+    '<li>اسأل العميل عن تاريخ الدخول والخروج قبل ذكر أي سعر. أكّد التاريخ النسبي أو الناقص فقط.</li>\n' +
     '<li>كل قسم أدناه هو سعر ليلة واحدة بتاريخها. للإقامة عدة ليالٍ اجمع أسعار لياليها.</li>\n' +
-    '<li>الأسعار بالريال السعودي وشاملة الضريبة، كما يعرضها محرك الحجز اليوم.</li>\n' +
+    '<li>الأسعار بالريال السعودي وشاملة الضريبة، كما يعرضها محرك الحجز اليوم، وقد تختلف في المواسم.</li>\n' +
     '<li>لا تؤكد توفّر أي غرفة؛ التوفّر يتغيّر خلال ساعات. أرفق رابط الحجز المباشر دائمًا.</li>\n' +
     '<li>إن لم يوجد قسم للتاريخ المطلوب أو لم تظهر فيه أسعار فلا تخمّن: أرسل رابط الحجز وحوّل للمختص.</li>\n' +
     '</ul>\n</div>\n';
@@ -102,15 +114,18 @@ function branchPage(code, b, data) {
     h += '<h2>' + esc(name) + ' — ليلة ' + dayAr(w.checkin) + ' (' + esc(w.checkin) + ')</h2>\n';
     if (w.status !== 'ok' || !w.rooms || !w.rooms.length) {
       h += '<p>لا تظهر أسعار في ' + esc(name) + ' لليلة ' + esc(w.checkin) +
-        ' (الدخول ' + esc(w.checkin) + ' والخروج ' + esc(w.checkout) + '). لا تخمّن سعرًا: أرسل رابط الحجز وحوّل للمختص.</p>\n';
+        ' (الدخول ' + esc(w.checkin) + ' والخروج ' + esc(w.checkout) + '). لا تخمّن سعرًا: أرسل رابط الحجز وحوّل للمختص.</p>\n' +
+        '<p>رابط محرك الحجز لـ ' + esc(name) + ': ' + esc(link) + '</p>\n';
       continue;
     }
     h += '<p>سعر ليلة ' + dayAr(w.checkin) + ' في ' + esc(name) + ' (الدخول ' + esc(w.checkin) +
       ' والخروج ' + esc(w.checkout) + ') حسب محرك الحجز اليوم، شامل الضريبة:</p>\n<ul>\n';
     for (const r of [...w.rooms].sort((a, z) => a.per_night - z.per_night)) {
-      h += '<li>' + esc(r.room) + ' (' + esc(r.name_page || r.code) + '): ' + sar(r.per_night) + '</li>\n';
+      h += '<li>' + esc(UNIT_NAMES[r.code] || r.room) + ': ' + sar(r.per_night) + '</li>\n';
     }
-    h += '</ul>\n';
+    // the agent only sees the chunk for the night asked about, so every
+    // section carries its own booking link (the one at the top gets lost)
+    h += '</ul>\n<p>رابط محرك الحجز لـ ' + esc(name) + ' (يُرسل للعميل كنص عادي): ' + esc(link) + '</p>\n';
   }
 
   return shell('أسعار ' + name + ' لكل ليلة',
