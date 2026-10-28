@@ -34,11 +34,16 @@ jobs:
           path: shot-*.png
           if-no-files-found: ignore
 
+      - name: Build rates page
+        if: always()
+        continue-on-error: true
+        run: node make-page.js
+
       - name: Commit rates.json
         if: always()
         run: |
           git config user.name  'merya-bot'
           git config user.email 'bot@users.noreply.github.com'
-          git add rates.json || true
+          git add rates.json docs || true
           git commit -m 'rates update' || echo 'no change'
           git push || true
