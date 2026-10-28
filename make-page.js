@@ -16,6 +16,11 @@ const BOOKING = {
   zahra: 'https://booking.staygrid.com/webv2/index/index/key/beb25861a362c1574702f07eca5b8ce7175758376068c2999064345____VEwvOVN1LzV2Y2xKU0lEM0hBK1kxdkxHUThoNGtvQUlkQVVIOXlLUWFWbWxYTHBTTW5UaWxJUEUwcUdrZ3E5Ymhvbkg0U2FsNWVrV1MwZmVhT0V4SDhReDJCaTdXSzU1cDVkVk1sSXN2Y2wweEw1OXRVV2dvYk5Rd0s0a04wd2Y%257C'
 };
 
+// short redirect pages with no '_' in the URL: Respond.io turns the page into
+// Markdown and escapes every '_' in the engine link, which breaks it on WhatsApp
+const SITE = 'https://7ammad11.github.io/merya-rates/';
+const bookPage = code => SITE + 'book-' + code + '.html';
+
 const NAMES = { shafa: 'ميريا الشفا', zahra: 'ميريا الزهراء' };
 
 const ORDER = ['shafa', 'zahra'];
@@ -99,7 +104,7 @@ function rules(name) {
 
 function branchPage(code, b, data) {
   const name = b.hotel_ar || NAMES[code] || code;
-  const link = BOOKING[code];
+  const link = bookPage(code);
   const windows = (b.windows || []).filter(w => w.nights === 1);
   const first = windows.length ? windows[0].checkin : '';
   const last = windows.length ? windows[windows.length - 1].checkin : '';
@@ -132,6 +137,22 @@ function branchPage(code, b, data) {
     'سعر الليلة في ' + name + ' لكل تاريخ خلال الأيام القادمة، من محرك الحجز الرسمي، شامل الضريبة ومحدّث يوميًا.', h);
 }
 
+function redirectPage(code, name) {
+  const to = BOOKING[code];
+  return `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=${esc(to)}">
+<title>${esc('الحجز في ' + name)}</title>
+<script>location.replace(${JSON.stringify(to)});</script>
+</head>
+<body><p><a href="${esc(to)}">${esc('اضغط هنا للحجز في ' + name)}</a></p></body>
+</html>
+`;
+}
+
 function indexPage(codes, branches, data) {
   let h = '<h1>أسعار غرف فنادق ميريا</h1>\n' + header(data) +
     '<p>أسعار كل ليلة لكل فرع في صفحة مستقلة:</p>\n<ul>\n';
@@ -150,6 +171,7 @@ const codes = ORDER.filter(c => branches[c]).concat(Object.keys(branches).filter
 
 fs.mkdirSync('docs', { recursive: true });
 for (const c of codes) fs.writeFileSync('docs/' + c + '.html', branchPage(c, branches[c], data));
+for (const c of Object.keys(BOOKING)) fs.writeFileSync('docs/book-' + c + '.html', redirectPage(c, NAMES[c]));
 fs.writeFileSync('docs/index.html', indexPage(codes, branches, data));
 fs.writeFileSync('docs/.nojekyll', '');
 console.log('docs written: index, ' + codes.join(', '));
