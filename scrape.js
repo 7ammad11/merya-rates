@@ -57,8 +57,9 @@ const ROOM_NAMES = {
 const DAYS_AHEAD = 60;
 const WINDOWS = Array.from({ length: DAYS_AHEAD }, (_, i) => ({ in: i + 1, nights: 1 }));
 
-// parallel browser contexts per branch (each one holds its own engine session)
-const WORKERS = 4;
+// one search at a time: parallel searches made the engine return empty room
+// lists (and an F5 503) for nights that do have rooms — tested 2026-10-28
+const WORKERS = 1;
 
 // ───────────────────────────── helpers ─────────────────────────────
 
@@ -244,14 +245,13 @@ async function scrapeBranch(browser, code) {
     branches: {}
   };
 
-  // both branches at once (WORKERS contexts each)
-  await Promise.all(Object.keys(BRANCHES).map(async code => {
+  for (const code of Object.keys(BRANCHES)) {
     try {
       out.branches[code] = await scrapeBranch(browser, code);
     } catch (e) {
       out.branches[code] = { branch: code, status: 'error', error: String(e).slice(0, 300), windows: [] };
     }
-  }));
+  }
 
   await browser.close();
 
