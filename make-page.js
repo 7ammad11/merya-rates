@@ -17,7 +17,8 @@ const BOOKING = {
 };
 
 // short redirect pages with no '_' in the URL: Respond.io turns the page into
-// Markdown and escapes every '_' in the engine link, which breaks it on WhatsApp
+// Markdown and escapes every '_' in the engine link, which breaks it on WhatsApp.
+// They send no referrer: the engine rejects visits referred from github.io
 const SITE = 'https://7ammad11.github.io/merya-rates/';
 const bookPage = code => SITE + 'book-' + code + '.html';
 
@@ -144,6 +145,7 @@ function redirectPage(code, name) {
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
 <meta http-equiv="refresh" content="0; url=${esc(to)}">
 <title>${esc('الحجز في ' + name)}</title>
 <script>location.replace(${JSON.stringify(to)});</script>
