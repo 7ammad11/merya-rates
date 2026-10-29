@@ -11,17 +11,13 @@
 
 const fs = require('fs');
 
-const BOOKING = {
-  shafa: 'https://booking.staygrid.com/webv2/index/index/key/b696d2839749ffca687ee4e768bafd0e17639661206923fca8033e6____WUFYNWVaRGhMbTNpYmhzSUlLLzE4ZzU3KzRXaDN5VDQ2WGtLL0NNMDFUcyswRVhwQ3NnSmtUZk5xbU5ZYnpvZE9PTGk1Y0NUTE8yc1V3K2Z4Sy9iTVQzWGRoLzd5dlVpeVMzOStCeWxCUlNETUd0a3duaE5HdEpWaDdHZXVBNC8%257C',
-  zahra: 'https://booking.staygrid.com/webv2/index/index/key/beb25861a362c1574702f07eca5b8ce7175758376068c2999064345____VEwvOVN1LzV2Y2xKU0lEM0hBK1kxdkxHUThoNGtvQUlkQVVIOXlLUWFWbWxYTHBTTW5UaWxJUEUwcUdrZ3E5Ymhvbkg0U2FsNWVrV1MwZmVhT0V4SDhReDJCaTdXSzU1cDVkVk1sSXN2Y2wweEw1OXRVV2dvYk5Rd0s0a04wd2Y%257C'
+// the agent sends the branch page on the official site (it has a Book now
+// button): short, on Merya's own domain, and free of '_', which Respond.io
+// escapes when it turns this page into Markdown
+const SITE_PAGE = {
+  shafa: 'https://www.meryahotels.com/merya-shafa',
+  zahra: 'https://www.meryahotels.com/merya-zahra'
 };
-
-// short redirect pages with no '_' in the URL: Respond.io turns the page into
-// Markdown and escapes every '_' in the engine link, which breaks it on WhatsApp.
-// They send no referrer: the engine rejects visits referred from github.io,
-// and navigate once: a second hit on the same key gets an error page
-const SITE = 'https://7ammad11.github.io/merya-rates/';
-const bookPage = code => SITE + 'book-' + code + '.html';
 
 const NAMES = { shafa: 'ميريا الشفا', zahra: 'ميريا الزهراء' };
 
@@ -99,21 +95,24 @@ function rules(name) {
     '<li>اسأل العميل عن تاريخ الدخول والخروج قبل ذكر أي سعر. أكّد التاريخ النسبي أو الناقص فقط.</li>\n' +
     '<li>كل قسم أدناه هو سعر ليلة واحدة بتاريخها. للإقامة عدة ليالٍ اجمع أسعار لياليها.</li>\n' +
     '<li>الأسعار بالريال السعودي وشاملة الضريبة، كما يعرضها محرك الحجز اليوم، وقد تختلف في المواسم.</li>\n' +
-    '<li>لا تؤكد توفّر أي غرفة؛ التوفّر يتغيّر خلال ساعات. أرفق رابط الحجز المباشر دائمًا.</li>\n' +
+    '<li>لا تؤكد توفّر أي غرفة؛ التوفّر يتغيّر خلال ساعات. أرفق رابط الحجز دائمًا.</li>\n' +
+    '<li>اذكر كل الوحدات الظاهرة في القسم. إن ظهرت وحدات أقل من المعتاد فهذه وحدها التي يعرض لها محرك الحجز سعرًا تلك الليلة؛ لا تفترض أن العميل يريدها.</li>\n' +
     '<li>إن لم يوجد قسم للتاريخ المطلوب أو لم تظهر فيه أسعار فلا تخمّن: أرسل رابط الحجز وحوّل للمختص.</li>\n' +
     '</ul>\n</div>\n';
 }
 
 function branchPage(code, b, data) {
   const name = b.hotel_ar || NAMES[code] || code;
-  const link = bookPage(code);
+  const link = SITE_PAGE[code];
   const windows = (b.windows || []).filter(w => w.nights === 1);
   const first = windows.length ? windows[0].checkin : '';
   const last = windows.length ? windows[windows.length - 1].checkin : '';
+  // most unit types priced on any night; a night with fewer shows the rest have no price
+  const full = Math.max(0, ...windows.map(w => (w.rooms || []).length));
 
   let h = '<h1>أسعار الليلة في ' + esc(name) + ' حسب التاريخ</h1>\n' + header(data) +
     '<p>تغطي هذه الصفحة كل ليلة من ' + esc(first) + ' إلى ' + esc(last) + '.</p>\n' +
-    '<p>رابط الحجز المباشر لـ ' + esc(name) + ': <a href="' + esc(link) + '">' + esc(link) + '</a></p>\n' +
+    '<p>رابط الحجز لـ ' + esc(name) + ' (صفحة الفندق في موقع ميريا، فيها زر «احجز الان»): ' + esc(link) + '</p>\n' +
     rules(name);
 
   for (const w of windows) {
@@ -122,9 +121,10 @@ function branchPage(code, b, data) {
     if (w.status !== 'ok' || !w.rooms || !w.rooms.length) {
       h += '<p>لا تظهر أسعار في ' + esc(name) + ' لليلة ' + esc(w.checkin) +
         ' (الدخول ' + esc(w.checkin) + ' والخروج ' + esc(w.checkout) + '). لا تخمّن سعرًا: أرسل رابط الحجز وحوّل للمختص.</p>\n' +
-        '<p>رابط محرك الحجز لـ ' + esc(name) + ': ' + esc(link) + '</p>\n';
+        '<p>رابط الحجز لـ ' + esc(name) + ': ' + esc(link) + '</p>\n';
       continue;
     }
+    const n = w.rooms.length;
     h += '<p>سعر ليلة ' + dayAr(w.checkin) + ' في ' + esc(name) + ' (الدخول ' + esc(w.checkin) +
       ' والخروج ' + esc(w.checkout) + ') حسب محرك الحجز اليوم، شامل الضريبة:</p>\n<ul>\n';
     for (const r of [...w.rooms].sort((a, z) => a.per_night - z.per_night)) {
@@ -132,28 +132,16 @@ function branchPage(code, b, data) {
     }
     // the agent only sees the chunk for the night asked about, so every
     // section carries its own booking link (the one at the top gets lost)
-    h += '</ul>\n<p>رابط محرك الحجز لـ ' + esc(name) + ' (يُرسل للعميل كنص عادي): ' + esc(link) + '</p>\n';
+    h += '</ul>\n';
+    if (n < full) {
+      h += '<p>تظهر لهذه الليلة ' + (n === 1 ? 'وحدة واحدة فقط' : n === 2 ? 'وحدتان فقط' : n + ' وحدات فقط') +
+        ' من وحدات ' + esc(name) + '؛ الباقي لا يعرض له محرك الحجز سعرًا. اذكرها كما هي دون افتراض أن العميل يريدها.</p>\n';
+    }
+    h += '<p>رابط الحجز لـ ' + esc(name) + ' (يُرسل للعميل كنص عادي): ' + esc(link) + '</p>\n';
   }
 
   return shell('أسعار ' + name + ' لكل ليلة',
     'سعر الليلة في ' + name + ' لكل تاريخ خلال الأيام القادمة، من محرك الحجز الرسمي، شامل الضريبة ومحدّث يوميًا.', h);
-}
-
-function redirectPage(code, name) {
-  const to = BOOKING[code];
-  return `<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="robots" content="noindex">
-<meta name="referrer" content="no-referrer">
-<title>${esc('الحجز في ' + name)}</title>
-<script>location.replace(${JSON.stringify(to)});</script>
-<noscript><meta http-equiv="refresh" content="0; url=${esc(to)}"></noscript>
-</head>
-<body><p><a href="${esc(to)}">${esc('اضغط هنا للحجز في ' + name)}</a></p></body>
-</html>
-`;
 }
 
 function indexPage(codes, branches, data) {
@@ -174,7 +162,6 @@ const codes = ORDER.filter(c => branches[c]).concat(Object.keys(branches).filter
 
 fs.mkdirSync('docs', { recursive: true });
 for (const c of codes) fs.writeFileSync('docs/' + c + '.html', branchPage(c, branches[c], data));
-for (const c of Object.keys(BOOKING)) fs.writeFileSync('docs/book-' + c + '.html', redirectPage(c, NAMES[c]));
 fs.writeFileSync('docs/index.html', indexPage(codes, branches, data));
 fs.writeFileSync('docs/.nojekyll', '');
 console.log('docs written: index, ' + codes.join(', '));
