@@ -134,8 +134,9 @@ function branchPage(code, b, data) {
     // section carries its own booking link (the one at the top gets lost)
     h += '</ul>\n';
     if (n < full) {
-      h += '<p>تظهر لهذه الليلة ' + (n === 1 ? 'وحدة واحدة فقط' : n === 2 ? 'وحدتان فقط' : n + ' وحدات فقط') +
-        ' من وحدات ' + esc(name) + '؛ الباقي لا يعرض له محرك الحجز سعرًا. اذكرها كما هي دون افتراض أن العميل يريدها، وقل للعميل: «باقي الوحدات ما ظهرت لها أسعار في هذه الليلة، وممكن تكون محجوزة بالكامل».</p>\n';
+      // keep this short: a long note repeated on many nights made Respond.io's
+      // crawler drop half the page; the full wording lives once in rules()
+      h += '<p>باقي الوحدات ما ظهرت لها أسعار في هذه الليلة، وممكن تكون محجوزة بالكامل.</p>\n';
     }
     h += '<p>رابط الحجز لـ ' + esc(name) + ' (يُرسل للعميل كنص عادي): ' + esc(link) + '</p>\n';
   }
