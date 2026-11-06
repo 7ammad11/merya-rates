@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T07:28:29.039Z",
+  "generated_at": "2026-11-06T07:36:12.825Z",
   "source": "Hotelogix Web Booking Engine (booking.staygrid.com)",
   "branches": {
     "shafa": {
@@ -11,54 +11,6 @@
       "tax": "شامل الضريبة",
       "windows": [
         {
-          "checkin": "2026-11-06",
-          "checkout": "2026-11-07",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "SUT",
-            "room": "جناح من غرفة نوم وصالة",
-            "name_page": "Suite",
-            "total": 359,
-            "per_night": 359,
-            "rooms_left": 3
-          },
-          "rooms": [
-            {
-              "code": "SUT",
-              "room": "جناح من غرفة نوم وصالة",
-              "name_page": "Suite",
-              "total": 359,
-              "per_night": 359,
-              "rooms_left": 3
-            },
-            {
-              "code": "JVILA",
-              "room": "فيلا دورين مع بلكونة وإطلالة",
-              "name_page": "Junior Villa with View and Balcony",
-              "total": 409,
-              "per_night": 409,
-              "rooms_left": 3
-            },
-            {
-              "code": "SUTWT",
-              "room": "جناح من غرفة نوم وصالة مع تراس",
-              "name_page": "Suite with Terrace",
-              "total": 459,
-              "per_night": 459,
-              "rooms_left": 1
-            },
-            {
-              "code": "TBS",
-              "room": "جناح من غرفتين نوم وصالة",
-              "name_page": "Two Bedrooms Suite",
-              "total": 559,
-              "per_night": 559,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
           "checkin": "2026-11-07",
           "checkout": "2026-11-08",
           "nights": 1,
@@ -69,7 +21,7 @@
             "name_page": "Suite",
             "total": 239,
             "per_night": 239,
-            "rooms_left": 4
+            "rooms_left": 3
           },
           "rooms": [
             {
@@ -78,7 +30,7 @@
               "name_page": "Suite",
               "total": 239,
               "per_night": 239,
-              "rooms_left": 4
+              "rooms_left": 3
             },
             {
               "code": "JVILA",
@@ -246,7 +198,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 409,
               "per_night": 409,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -318,7 +270,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 409,
               "per_night": 409,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -425,14 +377,6 @@
               "rooms_left": null
             },
             {
-              "code": "SUTWVB",
-              "room": "جناح من غرفة نوم وصالة مع بلكونة وإطلالة",
-              "name_page": "Suite with View and Balcony",
-              "total": 399,
-              "per_night": 399,
-              "rooms_left": 1
-            },
-            {
               "code": "JVILA",
               "room": "فيلا دورين مع بلكونة وإطلالة",
               "name_page": "Junior Villa with View and Balcony",
@@ -454,7 +398,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 559,
               "per_night": 559,
-              "rooms_left": null
+              "rooms_left": 3
             },
             {
               "code": "TBSVB",
@@ -526,7 +470,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 559,
               "per_night": 559,
-              "rooms_left": 4
+              "rooms_left": 3
             },
             {
               "code": "TBSVB",
@@ -574,7 +518,7 @@
               "name_page": "Suite with View and Balcony",
               "total": 299,
               "per_night": 299,
-              "rooms_left": 1
+              "rooms_left": 2
             },
             {
               "code": "JVILA",
@@ -590,7 +534,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 409,
               "per_night": 409,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -630,7 +574,7 @@
               "name_page": "Suite with View and Balcony",
               "total": 299,
               "per_night": 299,
-              "rooms_left": 1
+              "rooms_left": 2
             },
             {
               "code": "JVILA",
@@ -766,7 +710,7 @@
               "name_page": "Suite with View and Balcony",
               "total": 299,
               "per_night": 299,
-              "rooms_left": 2
+              "rooms_left": 3
             },
             {
               "code": "JVILA",
@@ -790,7 +734,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 409,
               "per_night": 409,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -838,7 +782,7 @@
               "name_page": "Suite with View and Balcony",
               "total": 299,
               "per_night": 299,
-              "rooms_left": 2
+              "rooms_left": 3
             },
             {
               "code": "JVILA",
@@ -862,7 +806,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 409,
               "per_night": 409,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -1086,7 +1030,7 @@
               "name_page": "Two Bedrooms Suite with View and Balcony",
               "total": 709,
               "per_night": 709,
-              "rooms_left": 3
+              "rooms_left": 2
             },
             {
               "code": "HANDI",
@@ -1294,7 +1238,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 619,
               "per_night": 619,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -1302,7 +1246,7 @@
               "name_page": "Two Bedrooms Suite with View and Balcony",
               "total": 709,
               "per_night": 709,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "HANDI",
@@ -1510,7 +1454,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 619,
               "per_night": 619,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -1654,7 +1598,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -1726,7 +1670,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -1798,7 +1742,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -1822,13 +1766,73 @@
           "checkin": "2026-12-02",
           "checkout": "2026-12-03",
           "nights": 1,
-          "status": "no_rooms",
-          "cheapest": null,
-          "rooms": [],
-          "debug": {
-            "url": "https://booking.staygrid.com/webv2/index/selectroom/key/e26dfabfca8b01ef86626f098f43a32317938647726aec344415a6c____WUFYN",
-            "page_text": "SAR CORPORATE TRAVEL AGENT GUEST MERYA AL SHAFA BOOK NOW Previous Next Al Shfa242, Taif 26754, Taif, Makkah - 26754, Saudi Arabia Map Data 200 m Terms 966127502322 http://Meryahotels.com 24 Hour Room Service Air Conditioning Air Purifiers C"
-          }
+          "status": "ok",
+          "cheapest": {
+            "code": "SUT",
+            "room": "جناح من غرفة نوم وصالة",
+            "name_page": "Suite",
+            "total": 269,
+            "per_night": 269,
+            "rooms_left": null
+          },
+          "rooms": [
+            {
+              "code": "SUT",
+              "room": "جناح من غرفة نوم وصالة",
+              "name_page": "Suite",
+              "total": 269,
+              "per_night": 269,
+              "rooms_left": null
+            },
+            {
+              "code": "SUTWVB",
+              "room": "جناح من غرفة نوم وصالة مع بلكونة وإطلالة",
+              "name_page": "Suite with View and Balcony",
+              "total": 309,
+              "per_night": 309,
+              "rooms_left": 3
+            },
+            {
+              "code": "SUTWT",
+              "room": "جناح من غرفة نوم وصالة مع تراس",
+              "name_page": "Suite with Terrace",
+              "total": 329,
+              "per_night": 329,
+              "rooms_left": 1
+            },
+            {
+              "code": "JVILA",
+              "room": "فيلا دورين مع بلكونة وإطلالة",
+              "name_page": "Junior Villa with View and Balcony",
+              "total": 379,
+              "per_night": 379,
+              "rooms_left": null
+            },
+            {
+              "code": "TBS",
+              "room": "جناح من غرفتين نوم وصالة",
+              "name_page": "Two Bedrooms Suite",
+              "total": 399,
+              "per_night": 399,
+              "rooms_left": null
+            },
+            {
+              "code": "TBSVB",
+              "room": "جناح من غرفتين نوم وصالة مع بلكونة وإطلالة",
+              "name_page": "Two Bedrooms Suite with View and Balcony",
+              "total": 489,
+              "per_night": 489,
+              "rooms_left": null
+            },
+            {
+              "code": "HANDI",
+              "room": "جناح من غرفتين نوم وصالة مع بلكونة وإطلالة لذوي الاحتياجات الخاصة",
+              "name_page": "Handicap Two Bedrooms Suite with View and Balcony",
+              "total": 489,
+              "per_night": 489,
+              "rooms_left": 1
+            }
+          ]
         },
         {
           "checkin": "2026-12-03",
@@ -1858,7 +1862,7 @@
               "name_page": "Suite with View and Balcony",
               "total": 399,
               "per_night": 399,
-              "rooms_left": 2
+              "rooms_left": 3
             },
             {
               "code": "SUTWT",
@@ -2026,7 +2030,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -2314,7 +2318,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -2386,7 +2390,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 509,
               "per_night": 509,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -2458,7 +2462,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 509,
               "per_night": 509,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -2602,7 +2606,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -2746,7 +2750,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -2890,7 +2894,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 509,
               "per_night": 509,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -2954,7 +2958,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 509,
               "per_night": 509,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -3018,7 +3022,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -3162,7 +3166,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -3234,7 +3238,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -3306,7 +3310,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -3378,7 +3382,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 509,
               "per_night": 509,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -3882,7 +3886,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 509,
               "per_night": 509,
-              "rooms_left": 4
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -4026,7 +4030,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": null
+              "rooms_left": 4
             },
             {
               "code": "TBSVB",
@@ -4170,7 +4174,79 @@
               "name_page": "Two Bedrooms Suite",
               "total": 399,
               "per_night": 399,
-              "rooms_left": 4
+              "rooms_left": null
+            },
+            {
+              "code": "TBSVB",
+              "room": "جناح من غرفتين نوم وصالة مع بلكونة وإطلالة",
+              "name_page": "Two Bedrooms Suite with View and Balcony",
+              "total": 489,
+              "per_night": 489,
+              "rooms_left": null
+            },
+            {
+              "code": "HANDI",
+              "room": "جناح من غرفتين نوم وصالة مع بلكونة وإطلالة لذوي الاحتياجات الخاصة",
+              "name_page": "Handicap Two Bedrooms Suite with View and Balcony",
+              "total": 489,
+              "per_night": 489,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2027-01-05",
+          "checkout": "2027-01-06",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "SUT",
+            "room": "جناح من غرفة نوم وصالة",
+            "name_page": "Suite",
+            "total": 269,
+            "per_night": 269,
+            "rooms_left": null
+          },
+          "rooms": [
+            {
+              "code": "SUT",
+              "room": "جناح من غرفة نوم وصالة",
+              "name_page": "Suite",
+              "total": 269,
+              "per_night": 269,
+              "rooms_left": null
+            },
+            {
+              "code": "SUTWVB",
+              "room": "جناح من غرفة نوم وصالة مع بلكونة وإطلالة",
+              "name_page": "Suite with View and Balcony",
+              "total": 309,
+              "per_night": 309,
+              "rooms_left": 3
+            },
+            {
+              "code": "SUTWT",
+              "room": "جناح من غرفة نوم وصالة مع تراس",
+              "name_page": "Suite with Terrace",
+              "total": 329,
+              "per_night": 329,
+              "rooms_left": 1
+            },
+            {
+              "code": "JVILA",
+              "room": "فيلا دورين مع بلكونة وإطلالة",
+              "name_page": "Junior Villa with View and Balcony",
+              "total": 379,
+              "per_night": 379,
+              "rooms_left": null
+            },
+            {
+              "code": "TBS",
+              "room": "جناح من غرفتين نوم وصالة",
+              "name_page": "Two Bedrooms Suite",
+              "total": 399,
+              "per_night": 399,
+              "rooms_left": null
             },
             {
               "code": "TBSVB",
@@ -4201,105 +4277,49 @@
       "tax": "شامل الضريبة",
       "windows": [
         {
-          "checkin": "2026-11-06",
-          "checkout": "2026-11-07",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "OBA",
-            "room": "جناح",
-            "name_page": "Suite",
-            "total": 335.58,
-            "per_night": 335.58,
-            "rooms_left": 2
-          },
-          "rooms": [
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 335.58,
-              "per_night": 335.58,
-              "rooms_left": 2
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 352.84,
-              "per_night": 352.84,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBACV",
-              "room": "جناح غرفتين مع إطلالة على المدينة",
-              "name_page": "Two Bedrooms Suite with City View",
-              "total": 603.02,
-              "per_night": 603.02,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBSSC",
-              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
-              "name_page": "Two bedrooms superior suite With City View",
-              "total": 611.64,
-              "per_night": 611.64,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
           "checkin": "2026-11-07",
           "checkout": "2026-11-08",
           "nights": 1,
           "status": "ok",
           "cheapest": {
-            "code": "OBA",
-            "room": "جناح",
-            "name_page": "Suite",
-            "total": 269.94,
-            "per_night": 269.94,
-            "rooms_left": 1
+            "code": "OBACV",
+            "room": "جناح غرفة نوم مع إطلالة على المدينة",
+            "name_page": "One Bedroom Suite with City View",
+            "total": 290.94,
+            "per_night": 290.94,
+            "rooms_left": null
           },
           "rooms": [
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 269.94,
-              "per_night": 269.94,
-              "rooms_left": 1
-            },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 296.14,
-              "per_night": 296.14,
+              "total": 290.94,
+              "per_night": 290.94,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 435.92,
-              "per_night": 435.92,
+              "total": 428.26,
+              "per_night": 428.26,
               "rooms_left": 1
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 514.54,
-              "per_night": 514.54,
+              "total": 505.5,
+              "per_night": 505.5,
               "rooms_left": 2
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 532.01,
-              "per_night": 532.01,
+              "total": 522.66,
+              "per_night": 522.66,
               "rooms_left": 1
             }
           ]
@@ -4313,33 +4333,33 @@
             "code": "OBA",
             "room": "جناح",
             "name_page": "Suite",
-            "total": 298.36,
-            "per_night": 298.36,
-            "rooms_left": 2
+            "total": 268.52,
+            "per_night": 268.52,
+            "rooms_left": 3
           },
           "rooms": [
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 298.36,
-              "per_night": 298.36,
-              "rooms_left": 2
+              "total": 268.52,
+              "per_night": 268.52,
+              "rooms_left": 3
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 327.32,
-              "per_night": 327.32,
+              "total": 294.59,
+              "per_night": 294.59,
               "rooms_left": null
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 568.71,
-              "per_night": 568.71,
+              "total": 511.84,
+              "per_night": 511.84,
               "rooms_left": 2
             }
           ]
@@ -4355,7 +4375,7 @@
             "name_page": "Suite",
             "total": 296.78,
             "per_night": 296.78,
-            "rooms_left": 2
+            "rooms_left": 3
           },
           "rooms": [
             {
@@ -4364,7 +4384,7 @@
               "name_page": "Suite",
               "total": 296.78,
               "per_night": 296.78,
-              "rooms_left": 2
+              "rooms_left": 3
             },
             {
               "code": "OBACV",
@@ -4401,8 +4421,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 228.94,
-            "per_night": 228.94,
+            "total": 231.53,
+            "per_night": 231.53,
             "rooms_left": 1
           },
           "rooms": [
@@ -4410,48 +4430,48 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 228.94,
-              "per_night": 228.94,
+              "total": 231.53,
+              "per_night": 231.53,
               "rooms_left": 1
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 273.13,
-              "per_night": 273.13,
+              "total": 276.23,
+              "per_night": 276.23,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 299.65,
-              "per_night": 299.65,
+              "total": 303.04,
+              "per_night": 303.04,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 441.08,
-              "per_night": 441.08,
+              "total": 446.07,
+              "per_night": 446.07,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 520.63,
-              "per_night": 520.63,
+              "total": 526.53,
+              "per_night": 526.53,
               "rooms_left": 2
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 538.31,
-              "per_night": 538.31,
+              "total": 544.41,
+              "per_night": 544.41,
               "rooms_left": 1
             }
           ]
@@ -4593,8 +4613,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 311.94,
-            "per_night": 311.94,
+            "total": 318.31,
+            "per_night": 318.31,
             "rooms_left": 2
           },
           "rooms": [
@@ -4602,40 +4622,40 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 311.94,
-              "per_night": 311.94,
+              "total": 318.31,
+              "per_night": 318.31,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 388.21,
-              "per_night": 388.21,
+              "total": 396.13,
+              "per_night": 396.13,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 411.09,
-              "per_night": 411.09,
+              "total": 419.48,
+              "per_night": 419.48,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 578.88,
-              "per_night": 578.88,
+              "total": 590.69,
+              "per_night": 590.69,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 617.02,
-              "per_night": 617.02,
+              "total": 629.61,
+              "per_night": 629.61,
               "rooms_left": 2
             }
           ]
@@ -4649,8 +4669,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 229.99,
-            "per_night": 229.99,
+            "total": 234.79,
+            "per_night": 234.79,
             "rooms_left": 3
           },
           "rooms": [
@@ -4658,48 +4678,48 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 229.99,
-              "per_night": 229.99,
+              "total": 234.79,
+              "per_night": 234.79,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 278.93,
-              "per_night": 278.93,
+              "total": 284.74,
+              "per_night": 284.74,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 299.9,
-              "per_night": 299.9,
+              "total": 306.15,
+              "per_night": 306.15,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 460.69,
-              "per_night": 460.69,
+              "total": 470.28,
+              "per_night": 470.28,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 488.65,
-              "per_night": 488.65,
+              "total": 498.83,
+              "per_night": 498.83,
               "rooms_left": 2
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 558.56,
-              "per_night": 558.56,
+              "total": 570.19,
+              "per_night": 570.19,
               "rooms_left": 1
             }
           ]
@@ -4707,6 +4727,62 @@
         {
           "checkin": "2026-11-15",
           "checkout": "2026-11-16",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 253.27,
+            "per_night": 253.27,
+            "rooms_left": 3
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 253.27,
+              "per_night": 253.27,
+              "rooms_left": 3
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 305.57,
+              "per_night": 305.57,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 327.99,
+              "per_night": 327.99,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 499.83,
+              "per_night": 499.83,
+              "rooms_left": 3
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 604.42,
+              "per_night": 604.42,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2026-11-16",
+          "checkout": "2026-11-17",
           "nights": 1,
           "status": "ok",
           "cheapest": {
@@ -4761,62 +4837,6 @@
           ]
         },
         {
-          "checkin": "2026-11-16",
-          "checkout": "2026-11-17",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 250.64,
-            "per_night": 250.64,
-            "rooms_left": 3
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 250.64,
-              "per_night": 250.64,
-              "rooms_left": 3
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 302.39,
-              "per_night": 302.39,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 324.57,
-              "per_night": 324.57,
-              "rooms_left": null
-            },
-            {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 494.62,
-              "per_night": 494.62,
-              "rooms_left": 3
-            },
-            {
-              "code": "TBSSC",
-              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
-              "name_page": "Two bedrooms superior suite With City View",
-              "total": 598.13,
-              "per_night": 598.13,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
           "checkin": "2026-11-17",
           "checkout": "2026-11-18",
           "nights": 1,
@@ -4825,8 +4845,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 262.52,
-            "per_night": 262.52,
+            "total": 263.56,
+            "per_night": 263.56,
             "rooms_left": 1
           },
           "rooms": [
@@ -4834,56 +4854,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 262.52,
-              "per_night": 262.52,
+              "total": 263.56,
+              "per_night": 263.56,
               "rooms_left": 1
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 315.18,
-              "per_night": 315.18,
+              "total": 316.43,
+              "per_night": 316.43,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 337.74,
-              "per_night": 337.74,
+              "total": 339.08,
+              "per_night": 339.08,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 510.75,
-              "per_night": 510.75,
+              "total": 512.78,
+              "per_night": 512.78,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 540.84,
-              "per_night": 540.84,
+              "total": 542.98,
+              "per_night": 542.98,
               "rooms_left": 1
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 578.45,
-              "per_night": 578.45,
+              "total": 580.74,
+              "per_night": 580.74,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 616.06,
-              "per_night": 616.06,
+              "total": 618.5,
+              "per_night": 618.5,
               "rooms_left": 1
             }
           ]
@@ -4897,8 +4917,8 @@
             "code": "OBA",
             "room": "جناح",
             "name_page": "Suite",
-            "total": 358.76,
-            "per_night": 358.76,
+            "total": 360.19,
+            "per_night": 360.19,
             "rooms_left": null
           },
           "rooms": [
@@ -4906,48 +4926,48 @@
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 358.76,
-              "per_night": 358.76,
+              "total": 360.19,
+              "per_night": 360.19,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 389.36,
-              "per_night": 389.36,
+              "total": 390.91,
+              "per_night": 390.91,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 580.6,
-              "per_night": 580.6,
+              "total": 582.91,
+              "per_night": 582.91,
               "rooms_left": 2
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 595.9,
-              "per_night": 595.9,
+              "total": 598.27,
+              "per_night": 598.27,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 611.2,
-              "per_night": 611.2,
+              "total": 613.63,
+              "per_night": 613.63,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 687.7,
-              "per_night": 687.7,
+              "total": 690.43,
+              "per_night": 690.43,
               "rooms_left": 1
             }
           ]
@@ -4961,11 +4981,83 @@
             "code": "OBA",
             "room": "جناح",
             "name_page": "Suite",
-            "total": 364.68,
-            "per_night": 364.68,
+            "total": 366.14,
+            "per_night": 366.14,
             "rooms_left": null
           },
           "rooms": [
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 366.14,
+              "per_night": 366.14,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 397.37,
+              "per_night": 397.37,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 592.54,
+              "per_night": 592.54,
+              "rooms_left": 2
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 608.15,
+              "per_night": 608.15,
+              "rooms_left": 2
+            },
+            {
+              "code": "TBSS",
+              "room": "جناح غرفتين سوبيريور",
+              "name_page": "Two bedrooms superior suite",
+              "total": 623.76,
+              "per_night": 623.76,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 701.83,
+              "per_night": 701.83,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2026-11-20",
+          "checkout": "2026-11-21",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 318.03,
+            "per_night": 318.03,
+            "rooms_left": 1
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 318.03,
+              "per_night": 318.03,
+              "rooms_left": 1
+            },
             {
               "code": "OBA",
               "room": "جناح",
@@ -4988,7 +5080,7 @@
               "name_page": "Two Bedrooms Suite",
               "total": 590.18,
               "per_night": 590.18,
-              "rooms_left": 2
+              "rooms_left": 1
             },
             {
               "code": "TBACV",
@@ -5005,78 +5097,6 @@
               "total": 621.28,
               "per_night": 621.28,
               "rooms_left": 1
-            },
-            {
-              "code": "TBSSC",
-              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
-              "name_page": "Two bedrooms superior suite With City View",
-              "total": 699.04,
-              "per_night": 699.04,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
-          "checkin": "2026-11-20",
-          "checkout": "2026-11-21",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 316.76,
-            "per_night": 316.76,
-            "rooms_left": 1
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 316.76,
-              "per_night": 316.76,
-              "rooms_left": 1
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 363.23,
-              "per_night": 363.23,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 394.2,
-              "per_night": 394.2,
-              "rooms_left": null
-            },
-            {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 587.82,
-              "per_night": 587.82,
-              "rooms_left": 1
-            },
-            {
-              "code": "TBACV",
-              "room": "جناح غرفتين مع إطلالة على المدينة",
-              "name_page": "Two Bedrooms Suite with City View",
-              "total": 603.31,
-              "per_night": 603.31,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBSS",
-              "room": "جناح غرفتين سوبيريور",
-              "name_page": "Two bedrooms superior suite",
-              "total": 618.8,
-              "per_night": 618.8,
-              "rooms_left": 1
             }
           ]
         },
@@ -5089,9 +5109,57 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
+            "total": 334.2,
+            "per_night": 334.2,
+            "rooms_left": 2
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 334.2,
+              "per_night": 334.2,
+              "rooms_left": 2
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 383.23,
+              "per_night": 383.23,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 415.91,
+              "per_night": 415.91,
+              "rooms_left": null
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 636.53,
+              "per_night": 636.53,
+              "rooms_left": 2
+            }
+          ]
+        },
+        {
+          "checkin": "2026-11-22",
+          "checkout": "2026-11-23",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
             "total": 332.86,
             "per_night": 332.86,
-            "rooms_left": 2
+            "rooms_left": 3
           },
           "rooms": [
             {
@@ -5100,7 +5168,7 @@
               "name_page": "Studio",
               "total": 332.86,
               "per_night": 332.86,
-              "rooms_left": 2
+              "rooms_left": 3
             },
             {
               "code": "OBA",
@@ -5124,53 +5192,69 @@
               "name_page": "Two Bedrooms Suite with City View",
               "total": 633.98,
               "per_night": 633.98,
-              "rooms_left": 2
-            }
-          ]
-        },
-        {
-          "checkin": "2026-11-22",
-          "checkout": "2026-11-23",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 339.11,
-            "per_night": 339.11,
-            "rooms_left": 2
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 339.11,
-              "per_night": 339.11,
-              "rooms_left": 2
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 388.86,
-              "per_night": 388.86,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 422.03,
-              "per_night": 422.03,
-              "rooms_left": null
+              "rooms_left": 1
             }
           ]
         },
         {
           "checkin": "2026-11-23",
           "checkout": "2026-11-24",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 331.52,
+            "per_night": 331.52,
+            "rooms_left": 3
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 331.52,
+              "per_night": 331.52,
+              "rooms_left": 3
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 380.15,
+              "per_night": 380.15,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 412.57,
+              "per_night": 412.57,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 615.21,
+              "per_night": 615.21,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 631.42,
+              "per_night": 631.42,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2026-11-24",
+          "checkout": "2026-11-25",
           "nights": 1,
           "status": "ok",
           "cheapest": {
@@ -5207,52 +5291,12 @@
               "rooms_left": null
             },
             {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 626.76,
-              "per_night": 626.76,
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 643.28,
+              "per_night": 643.28,
               "rooms_left": 1
-            }
-          ]
-        },
-        {
-          "checkin": "2026-11-24",
-          "checkout": "2026-11-25",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 343.9,
-            "per_night": 343.9,
-            "rooms_left": 1
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 343.9,
-              "per_night": 343.9,
-              "rooms_left": 1
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 394.36,
-              "per_night": 394.36,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 427.99,
-              "per_night": 427.99,
-              "rooms_left": null
             }
           ]
         },
@@ -5262,36 +5306,52 @@
           "nights": 1,
           "status": "ok",
           "cheapest": {
-            "code": "OBA",
-            "room": "جناح",
-            "name_page": "Suite",
-            "total": 419.26,
-            "per_night": 419.26,
-            "rooms_left": null
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 332.6,
+            "per_night": 332.6,
+            "rooms_left": 1
           },
           "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 332.6,
+              "per_night": 332.6,
+              "rooms_left": 1
+            },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 419.26,
-              "per_night": 419.26,
+              "total": 381.4,
+              "per_night": 381.4,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 455.01,
-              "per_night": 455.01,
+              "total": 413.93,
+              "per_night": 413.93,
               "rooms_left": null
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 633.49,
+              "per_night": 633.49,
+              "rooms_left": 1
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 714.26,
-              "per_night": 714.26,
+              "total": 649.76,
+              "per_night": 649.76,
               "rooms_left": 1
             }
           ]
@@ -5305,49 +5365,57 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 311.04,
-            "per_night": 311.04,
-            "rooms_left": 1
+            "total": 331.95,
+            "per_night": 331.95,
+            "rooms_left": 2
           },
           "rooms": [
             {
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 311.04,
-              "per_night": 311.04,
-              "rooms_left": 1
+              "total": 331.95,
+              "per_night": 331.95,
+              "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 356.67,
-              "per_night": 356.67,
+              "total": 380.65,
+              "per_night": 380.65,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 387.09,
-              "per_night": 387.09,
+              "total": 413.12,
+              "per_night": 413.12,
               "rooms_left": null
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 632.26,
+              "per_night": 632.26,
+              "rooms_left": 1
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 607.64,
-              "per_night": 607.64,
+              "total": 648.49,
+              "per_night": 648.49,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 683.69,
-              "per_night": 683.69,
+              "total": 729.65,
+              "per_night": 729.65,
               "rooms_left": 1
             }
           ]
@@ -5361,8 +5429,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 286.07,
-            "per_night": 286.07,
+            "total": 286.48,
+            "per_night": 286.48,
             "rooms_left": 2
           },
           "rooms": [
@@ -5370,56 +5438,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 286.07,
-              "per_night": 286.07,
+              "total": 286.48,
+              "per_night": 286.48,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 328.03,
-              "per_night": 328.03,
+              "total": 328.5,
+              "per_night": 328.5,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 356.01,
-              "per_night": 356.01,
+              "total": 356.52,
+              "per_night": 356.52,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 530.87,
-              "per_night": 530.87,
+              "total": 531.63,
+              "per_night": 531.63,
               "rooms_left": 2
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 544.86,
-              "per_night": 544.86,
+              "total": 545.63,
+              "per_night": 545.63,
               "rooms_left": 1
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 558.84,
-              "per_night": 558.84,
+              "total": 559.64,
+              "per_night": 559.64,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 628.79,
-              "per_night": 628.79,
+              "total": 629.68,
+              "per_night": 629.68,
               "rooms_left": 1
             }
           ]
@@ -5433,8 +5501,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 210.08,
-            "per_night": 210.08,
+            "total": 210.38,
+            "per_night": 210.38,
             "rooms_left": 3
           },
           "rooms": [
@@ -5442,56 +5510,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 210.08,
-              "per_night": 210.08,
+              "total": 210.38,
+              "per_night": 210.38,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 254.78,
-              "per_night": 254.78,
+              "total": 255.14,
+              "per_night": 255.14,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 273.93,
-              "per_night": 273.93,
+              "total": 274.32,
+              "per_night": 274.32,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 420.8,
-              "per_night": 420.8,
+              "total": 421.4,
+              "per_night": 421.4,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 446.34,
-              "per_night": 446.34,
+              "total": 446.98,
+              "per_night": 446.98,
               "rooms_left": 1
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 478.26,
-              "per_night": 478.26,
+              "total": 478.95,
+              "per_night": 478.95,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 510.19,
-              "per_night": 510.19,
+              "total": 510.92,
+              "per_night": 510.92,
               "rooms_left": 1
             }
           ]
@@ -5505,8 +5573,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 216.15,
-            "per_night": 216.15,
+            "total": 216.46,
+            "per_night": 216.46,
             "rooms_left": 2
           },
           "rooms": [
@@ -5514,56 +5582,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 216.15,
-              "per_night": 216.15,
+              "total": 216.46,
+              "per_night": 216.46,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 260.79,
-              "per_night": 260.79,
+              "total": 261.16,
+              "per_night": 261.16,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 279.92,
-              "per_night": 279.92,
+              "total": 280.32,
+              "per_night": 280.32,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 426.57,
-              "per_night": 426.57,
+              "total": 427.18,
+              "per_night": 427.18,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 452.08,
-              "per_night": 452.08,
+              "total": 452.72,
+              "per_night": 452.72,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 483.96,
-              "per_night": 483.96,
+              "total": 484.65,
+              "per_night": 484.65,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 515.84,
-              "per_night": 515.84,
+              "total": 516.58,
+              "per_night": 516.58,
               "rooms_left": 1
             }
           ]
@@ -5577,8 +5645,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 220.91,
-            "per_night": 220.91,
+            "total": 221.22,
+            "per_night": 221.22,
             "rooms_left": 1
           },
           "rooms": [
@@ -5586,40 +5654,112 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 220.91,
-              "per_night": 220.91,
+              "total": 221.22,
+              "per_night": 221.22,
               "rooms_left": 1
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 266.52,
-              "per_night": 266.52,
+              "total": 266.9,
+              "per_night": 266.9,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 286.07,
-              "per_night": 286.07,
+              "total": 286.48,
+              "per_night": 286.48,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 435.95,
-              "per_night": 435.95,
+              "total": 436.57,
+              "per_night": 436.57,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 462.02,
-              "per_night": 462.02,
+              "total": 462.68,
+              "per_night": 462.68,
+              "rooms_left": 2
+            },
+            {
+              "code": "TBSS",
+              "room": "جناح غرفتين سوبيريور",
+              "name_page": "Two bedrooms superior suite",
+              "total": 501.83,
+              "per_night": 501.83,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 527.94,
+              "per_night": 527.94,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2026-12-01",
+          "checkout": "2026-12-02",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 227.42,
+            "per_night": 227.42,
+            "rooms_left": 1
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 227.42,
+              "per_night": 227.42,
+              "rooms_left": 1
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 273.04,
+              "per_night": 273.04,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 292.59,
+              "per_night": 292.59,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 442.47,
+              "per_night": 442.47,
+              "rooms_left": 3
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 468.53,
+              "per_night": 468.53,
               "rooms_left": 2
             },
             {
@@ -5634,80 +5774,8 @@
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 527.18,
-              "per_night": 527.18,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
-          "checkin": "2026-12-01",
-          "checkout": "2026-12-02",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 227.1,
-            "per_night": 227.1,
-            "rooms_left": 1
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 227.1,
-              "per_night": 227.1,
-              "rooms_left": 1
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 272.65,
-              "per_night": 272.65,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 292.17,
-              "per_night": 292.17,
-              "rooms_left": null
-            },
-            {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 441.83,
-              "per_night": 441.83,
-              "rooms_left": 3
-            },
-            {
-              "code": "TBACV",
-              "room": "جناح غرفتين مع إطلالة على المدينة",
-              "name_page": "Two Bedrooms Suite with City View",
-              "total": 467.86,
-              "per_night": 467.86,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBSS",
-              "room": "جناح غرفتين سوبيريور",
-              "name_page": "Two bedrooms superior suite",
-              "total": 500.4,
-              "per_night": 500.4,
-              "rooms_left": 1
-            },
-            {
-              "code": "TBSSC",
-              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
-              "name_page": "Two bedrooms superior suite With City View",
-              "total": 532.93,
-              "per_night": 532.93,
+              "total": 533.7,
+              "per_night": 533.7,
               "rooms_left": 1
             }
           ]
@@ -5721,8 +5789,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 311.42,
-            "per_night": 311.42,
+            "total": 311.86,
+            "per_night": 311.86,
             "rooms_left": 3
           },
           "rooms": [
@@ -5730,56 +5798,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 311.42,
-              "per_night": 311.42,
+              "total": 311.86,
+              "per_night": 311.86,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 373.88,
-              "per_night": 373.88,
+              "total": 374.41,
+              "per_night": 374.41,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 400.65,
-              "per_night": 400.65,
+              "total": 401.22,
+              "per_night": 401.22,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 605.88,
-              "per_night": 605.88,
+              "total": 606.75,
+              "per_night": 606.75,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 641.57,
-              "per_night": 641.57,
+              "total": 642.49,
+              "per_night": 642.49,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 641.57,
-              "per_night": 641.57,
+              "total": 642.49,
+              "per_night": 642.49,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 730.8,
-              "per_night": 730.8,
+              "total": 731.85,
+              "per_night": 731.85,
               "rooms_left": 1
             }
           ]
@@ -5793,8 +5861,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 277.54,
-            "per_night": 277.54,
+            "total": 277.94,
+            "per_night": 277.94,
             "rooms_left": 3
           },
           "rooms": [
@@ -5802,56 +5870,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 277.54,
-              "per_night": 277.54,
+              "total": 277.94,
+              "per_night": 277.94,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 345.4,
-              "per_night": 345.4,
+              "total": 345.89,
+              "per_night": 345.89,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 365.75,
-              "per_night": 365.75,
+              "total": 366.28,
+              "per_night": 366.28,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 515.04,
-              "per_night": 515.04,
+              "total": 515.78,
+              "per_night": 515.78,
               "rooms_left": 1
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 548.97,
-              "per_night": 548.97,
+              "total": 549.76,
+              "per_night": 549.76,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 576.11,
-              "per_night": 576.11,
+              "total": 576.94,
+              "per_night": 576.94,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 610.04,
-              "per_night": 610.04,
+              "total": 610.92,
+              "per_night": 610.92,
               "rooms_left": 1
             }
           ]
@@ -5865,8 +5933,8 @@
             "code": "OBA",
             "room": "جناح",
             "name_page": "Suite",
-            "total": 375.12,
-            "per_night": 375.12,
+            "total": 375.66,
+            "per_night": 375.66,
             "rooms_left": null
           },
           "rooms": [
@@ -5874,48 +5942,48 @@
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 375.12,
-              "per_night": 375.12,
+              "total": 375.66,
+              "per_night": 375.66,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 397.23,
-              "per_night": 397.23,
+              "total": 397.81,
+              "per_night": 397.81,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 559.37,
-              "per_night": 559.37,
+              "total": 560.18,
+              "per_night": 560.18,
               "rooms_left": 1
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 596.22,
-              "per_night": 596.22,
+              "total": 597.08,
+              "per_night": 597.08,
               "rooms_left": 1
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 625.7,
-              "per_night": 625.7,
+              "total": 626.6,
+              "per_night": 626.6,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 662.55,
-              "per_night": 662.55,
+              "total": 663.5,
+              "per_night": 663.5,
               "rooms_left": 1
             }
           ]
@@ -5924,13 +5992,65 @@
           "checkin": "2026-12-05",
           "checkout": "2026-12-06",
           "nights": 1,
-          "status": "no_rooms",
-          "cheapest": null,
-          "rooms": [],
-          "debug": {
-            "url": "https://booking.staygrid.com/webv2/index/selectroom/key/e26dfabfca8b01ef86626f098f43a32317938677656aec3ff5bbefe____VEwvO",
-            "page_text": "SAR CORPORATE TRAVEL AGENT GUEST MERYA HOTEL BOOK NOW Previous Next Al Zahra Distrect, Ahmed Al Attas St, Jeddah, Makkah - 123456, Saudi Arabia Map Data 200 m Terms +966126394793 http://www.meryahotels.com 24 Hour Room Service Air Condition"
-          }
+          "status": "ok",
+          "cheapest": {
+            "code": "OBA",
+            "room": "جناح",
+            "name_page": "Suite",
+            "total": 288.13,
+            "per_night": 288.13,
+            "rooms_left": null
+          },
+          "rooms": [
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 288.13,
+              "per_night": 288.13,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 309.8,
+              "per_night": 309.8,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 475.89,
+              "per_night": 475.89,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 504.77,
+              "per_night": 504.77,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSS",
+              "room": "جناح غرفتين سوبيريور",
+              "name_page": "Two bedrooms superior suite",
+              "total": 540.88,
+              "per_night": 540.88,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 576.99,
+              "per_night": 576.99,
+              "rooms_left": 1
+            }
+          ]
         },
         {
           "checkin": "2026-12-06",
@@ -5941,8 +6061,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 300.75,
-            "per_night": 300.75,
+            "total": 301.19,
+            "per_night": 301.19,
             "rooms_left": 3
           },
           "rooms": [
@@ -5950,56 +6070,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 300.75,
-              "per_night": 300.75,
+              "total": 301.19,
+              "per_night": 301.19,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 362.86,
-              "per_night": 362.86,
+              "total": 363.38,
+              "per_night": 363.38,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 389.47,
-              "per_night": 389.47,
+              "total": 390.03,
+              "per_night": 390.03,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 593.52,
-              "per_night": 593.52,
+              "total": 594.38,
+              "per_night": 594.38,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 629.01,
-              "per_night": 629.01,
+              "total": 629.92,
+              "per_night": 629.92,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 673.37,
-              "per_night": 673.37,
+              "total": 674.34,
+              "per_night": 674.34,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 717.73,
-              "per_night": 717.73,
+              "total": 718.77,
+              "per_night": 718.77,
               "rooms_left": 1
             }
           ]
@@ -6013,8 +6133,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 213.68,
-            "per_night": 213.68,
+            "total": 213.99,
+            "per_night": 213.99,
             "rooms_left": 3
           },
           "rooms": [
@@ -6022,40 +6142,112 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 213.68,
-              "per_night": 213.68,
+              "total": 213.99,
+              "per_night": 213.99,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 257.8,
-              "per_night": 257.8,
+              "total": 258.18,
+              "per_night": 258.18,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 276.71,
-              "per_night": 276.71,
+              "total": 277.11,
+              "per_night": 277.11,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 421.69,
-              "per_night": 421.69,
+              "total": 422.3,
+              "per_night": 422.3,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 446.9,
-              "per_night": 446.9,
+              "total": 447.55,
+              "per_night": 447.55,
+              "rooms_left": 2
+            },
+            {
+              "code": "TBSS",
+              "room": "جناح غرفتين سوبيريور",
+              "name_page": "Two bedrooms superior suite",
+              "total": 485.42,
+              "per_night": 485.42,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 510.67,
+              "per_night": 510.67,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2026-12-08",
+          "checkout": "2026-12-09",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 219.98,
+            "per_night": 219.98,
+            "rooms_left": 3
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 219.98,
+              "per_night": 219.98,
+              "rooms_left": 3
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 264.11,
+              "per_night": 264.11,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 283.02,
+              "per_night": 283.02,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 427.99,
+              "per_night": 427.99,
+              "rooms_left": 3
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 453.21,
+              "per_night": 453.21,
               "rooms_left": 2
             },
             {
@@ -6070,80 +6262,8 @@
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 509.93,
-              "per_night": 509.93,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
-          "checkin": "2026-12-08",
-          "checkout": "2026-12-09",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 219.67,
-            "per_night": 219.67,
-            "rooms_left": 3
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 219.67,
-              "per_night": 219.67,
-              "rooms_left": 3
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 263.72,
-              "per_night": 263.72,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 282.61,
-              "per_night": 282.61,
-              "rooms_left": null
-            },
-            {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 427.37,
-              "per_night": 427.37,
-              "rooms_left": 3
-            },
-            {
-              "code": "TBACV",
-              "room": "جناح غرفتين مع إطلالة على المدينة",
-              "name_page": "Two Bedrooms Suite with City View",
-              "total": 452.55,
-              "per_night": 452.55,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBSS",
-              "room": "جناح غرفتين سوبيريور",
-              "name_page": "Two bedrooms superior suite",
-              "total": 484.02,
-              "per_night": 484.02,
-              "rooms_left": 1
-            },
-            {
-              "code": "TBSSC",
-              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
-              "name_page": "Two bedrooms superior suite With City View",
-              "total": 515.49,
-              "per_night": 515.49,
+              "total": 516.24,
+              "per_night": 516.24,
               "rooms_left": 1
             }
           ]
@@ -6157,8 +6277,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 229.64,
-            "per_night": 229.64,
+            "total": 229.97,
+            "per_night": 229.97,
             "rooms_left": 3
           },
           "rooms": [
@@ -6166,56 +6286,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 229.64,
-              "per_night": 229.64,
+              "total": 229.97,
+              "per_night": 229.97,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 275.69,
-              "per_night": 275.69,
+              "total": 276.09,
+              "per_night": 276.09,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 295.43,
-              "per_night": 295.43,
+              "total": 295.86,
+              "per_night": 295.86,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 446.77,
-              "per_night": 446.77,
+              "total": 447.42,
+              "per_night": 447.42,
               "rooms_left": 2
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 473.09,
-              "per_night": 473.09,
+              "total": 473.77,
+              "per_night": 473.77,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 473.09,
-              "per_night": 473.09,
+              "total": 473.77,
+              "per_night": 473.77,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 538.89,
-              "per_night": 538.89,
+              "total": 539.67,
+              "per_night": 539.67,
               "rooms_left": 1
             }
           ]
@@ -6229,8 +6349,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 292.8,
-            "per_night": 292.8,
+            "total": 293.23,
+            "per_night": 293.23,
             "rooms_left": 2
           },
           "rooms": [
@@ -6238,40 +6358,40 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 292.8,
-              "per_night": 292.8,
+              "total": 293.23,
+              "per_night": 293.23,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 364.39,
-              "per_night": 364.39,
+              "total": 364.92,
+              "per_night": 364.92,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 385.87,
-              "per_night": 385.87,
+              "total": 386.43,
+              "per_night": 386.43,
               "rooms_left": null
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 607.79,
-              "per_night": 607.79,
+              "total": 608.68,
+              "per_night": 608.68,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 643.59,
-              "per_night": 643.59,
+              "total": 644.52,
+              "per_night": 644.52,
               "rooms_left": 1
             }
           ]
@@ -6285,8 +6405,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 274.34,
-            "per_night": 274.34,
+            "total": 274.74,
+            "per_night": 274.74,
             "rooms_left": 2
           },
           "rooms": [
@@ -6294,56 +6414,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 274.34,
-              "per_night": 274.34,
+              "total": 274.74,
+              "per_night": 274.74,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 341.42,
-              "per_night": 341.42,
+              "total": 341.92,
+              "per_night": 341.92,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 361.54,
-              "per_night": 361.54,
+              "total": 362.07,
+              "per_night": 362.07,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 509.11,
-              "per_night": 509.11,
+              "total": 509.85,
+              "per_night": 509.85,
               "rooms_left": 1
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 542.65,
-              "per_night": 542.65,
+              "total": 543.44,
+              "per_night": 543.44,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 569.48,
-              "per_night": 569.48,
+              "total": 570.31,
+              "per_night": 570.31,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 603.02,
-              "per_night": 603.02,
+              "total": 603.9,
+              "per_night": 603.9,
               "rooms_left": 1
             }
           ]
@@ -6357,8 +6477,8 @@
             "code": "OBA",
             "room": "جناح",
             "name_page": "Suite",
-            "total": 278.96,
-            "per_night": 278.96,
+            "total": 279.36,
+            "per_night": 279.36,
             "rooms_left": null
           },
           "rooms": [
@@ -6366,48 +6486,48 @@
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 278.96,
-              "per_night": 278.96,
+              "total": 279.36,
+              "per_night": 279.36,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 299.93,
-              "per_night": 299.93,
+              "total": 300.37,
+              "per_night": 300.37,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 460.73,
-              "per_night": 460.73,
+              "total": 461.4,
+              "per_night": 461.4,
               "rooms_left": 1
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 488.7,
-              "per_night": 488.7,
+              "total": 489.41,
+              "per_night": 489.41,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 523.65,
-              "per_night": 523.65,
+              "total": 524.42,
+              "per_night": 524.42,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 558.61,
-              "per_night": 558.61,
+              "total": 559.43,
+              "per_night": 559.43,
               "rooms_left": 1
             }
           ]
@@ -6421,8 +6541,8 @@
             "code": "OBA",
             "room": "جناح",
             "name_page": "Suite",
-            "total": 279.54,
-            "per_night": 279.54,
+            "total": 279.95,
+            "per_night": 279.95,
             "rooms_left": null
           },
           "rooms": [
@@ -6430,48 +6550,48 @@
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 279.54,
-              "per_night": 279.54,
+              "total": 279.95,
+              "per_night": 279.95,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 300.04,
-              "per_night": 300.04,
+              "total": 300.48,
+              "per_night": 300.48,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 457.24,
-              "per_night": 457.24,
+              "total": 457.91,
+              "per_night": 457.91,
               "rooms_left": 2
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 484.58,
-              "per_night": 484.58,
+              "total": 485.29,
+              "per_night": 485.29,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 518.75,
-              "per_night": 518.75,
+              "total": 519.51,
+              "per_night": 519.51,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 552.92,
-              "per_night": 552.92,
+              "total": 553.73,
+              "per_night": 553.73,
               "rooms_left": 1
             }
           ]
@@ -6485,8 +6605,8 @@
             "code": "OBA",
             "room": "جناح",
             "name_page": "Suite",
-            "total": 273.15,
-            "per_night": 273.15,
+            "total": 273.54,
+            "per_night": 273.54,
             "rooms_left": null
           },
           "rooms": [
@@ -6494,48 +6614,48 @@
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 273.15,
-              "per_night": 273.15,
+              "total": 273.54,
+              "per_night": 273.54,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 293.18,
-              "per_night": 293.18,
+              "total": 293.61,
+              "per_night": 293.61,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 446.78,
-              "per_night": 446.78,
+              "total": 447.44,
+              "per_night": 447.44,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 473.5,
-              "per_night": 473.5,
+              "total": 474.19,
+              "per_night": 474.19,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 513.57,
-              "per_night": 513.57,
+              "total": 514.32,
+              "per_night": 514.32,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 540.28,
-              "per_night": 540.28,
+              "total": 541.07,
+              "per_night": 541.07,
               "rooms_left": 1
             }
           ]
@@ -6549,8 +6669,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 222.54,
-            "per_night": 222.54,
+            "total": 222.86,
+            "per_night": 222.86,
             "rooms_left": 2
           },
           "rooms": [
@@ -6558,56 +6678,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 222.54,
-              "per_night": 222.54,
+              "total": 222.86,
+              "per_night": 222.86,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 267.17,
-              "per_night": 267.17,
+              "total": 267.56,
+              "per_night": 267.56,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 286.3,
-              "per_night": 286.3,
+              "total": 286.72,
+              "per_night": 286.72,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 432.96,
-              "per_night": 432.96,
+              "total": 433.59,
+              "per_night": 433.59,
               "rooms_left": 2
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 458.46,
-              "per_night": 458.46,
+              "total": 459.13,
+              "per_night": 459.13,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 490.35,
-              "per_night": 490.35,
+              "total": 491.06,
+              "per_night": 491.06,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 522.23,
-              "per_night": 522.23,
+              "total": 522.99,
+              "per_night": 522.99,
               "rooms_left": 1
             }
           ]
@@ -6621,8 +6741,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 227.3,
-            "per_night": 227.3,
+            "total": 227.64,
+            "per_night": 227.64,
             "rooms_left": 2
           },
           "rooms": [
@@ -6630,56 +6750,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 227.3,
-              "per_night": 227.3,
+              "total": 227.64,
+              "per_night": 227.64,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 272.89,
-              "per_night": 272.89,
+              "total": 273.29,
+              "per_night": 273.29,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 292.43,
-              "per_night": 292.43,
+              "total": 292.86,
+              "per_night": 292.86,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 442.23,
-              "per_night": 442.23,
+              "total": 442.88,
+              "per_night": 442.88,
               "rooms_left": 2
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 468.28,
-              "per_night": 468.28,
+              "total": 468.97,
+              "per_night": 468.97,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 468.28,
-              "per_night": 468.28,
+              "total": 468.97,
+              "per_night": 468.97,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 533.41,
-              "per_night": 533.41,
+              "total": 534.19,
+              "per_night": 534.19,
               "rooms_left": 1
             }
           ]
@@ -6687,6 +6807,78 @@
         {
           "checkin": "2026-12-17",
           "checkout": "2026-12-18",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 260.41,
+            "per_night": 260.41,
+            "rooms_left": 2
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 260.41,
+              "per_night": 260.41,
+              "rooms_left": 2
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 324.08,
+              "per_night": 324.08,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 343.18,
+              "per_night": 343.18,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 483.26,
+              "per_night": 483.26,
+              "rooms_left": 3
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 515.1,
+              "per_night": 515.1,
+              "rooms_left": 2
+            },
+            {
+              "code": "TBSS",
+              "room": "جناح غرفتين سوبيريور",
+              "name_page": "Two bedrooms superior suite",
+              "total": 540.56,
+              "per_night": 540.56,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 572.4,
+              "per_night": 572.4,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2026-12-18",
+          "checkout": "2026-12-19",
           "nights": 1,
           "status": "ok",
           "cheapest": {
@@ -6757,78 +6949,6 @@
           ]
         },
         {
-          "checkin": "2026-12-18",
-          "checkout": "2026-12-19",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 259.65,
-            "per_night": 259.65,
-            "rooms_left": 2
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 259.65,
-              "per_night": 259.65,
-              "rooms_left": 2
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 323.13,
-              "per_night": 323.13,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 342.18,
-              "per_night": 342.18,
-              "rooms_left": null
-            },
-            {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 481.84,
-              "per_night": 481.84,
-              "rooms_left": 3
-            },
-            {
-              "code": "TBACV",
-              "room": "جناح غرفتين مع إطلالة على المدينة",
-              "name_page": "Two Bedrooms Suite with City View",
-              "total": 513.58,
-              "per_night": 513.58,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBSS",
-              "room": "جناح غرفتين سوبيريور",
-              "name_page": "Two bedrooms superior suite",
-              "total": 538.98,
-              "per_night": 538.98,
-              "rooms_left": 1
-            },
-            {
-              "code": "TBSSC",
-              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
-              "name_page": "Two bedrooms superior suite With City View",
-              "total": 570.72,
-              "per_night": 570.72,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
           "checkin": "2026-12-19",
           "checkout": "2026-12-20",
           "nights": 1,
@@ -6837,8 +6957,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 213.33,
-            "per_night": 213.33,
+            "total": 213.65,
+            "per_night": 213.65,
             "rooms_left": 2
           },
           "rooms": [
@@ -6846,56 +6966,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 213.33,
-              "per_night": 213.33,
+              "total": 213.65,
+              "per_night": 213.65,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 258.72,
-              "per_night": 258.72,
+              "total": 259.1,
+              "per_night": 259.1,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 278.18,
-              "per_night": 278.18,
+              "total": 278.59,
+              "per_night": 278.59,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 427.32,
-              "per_night": 427.32,
+              "total": 427.94,
+              "per_night": 427.94,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 453.25,
-              "per_night": 453.25,
+              "total": 453.92,
+              "per_night": 453.92,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 485.67,
-              "per_night": 485.67,
+              "total": 486.39,
+              "per_night": 486.39,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 518.1,
-              "per_night": 518.1,
+              "total": 518.86,
+              "per_night": 518.86,
               "rooms_left": 1
             }
           ]
@@ -6909,8 +7029,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 224.41,
-            "per_night": 224.41,
+            "total": 224.74,
+            "per_night": 224.74,
             "rooms_left": 2
           },
           "rooms": [
@@ -6918,56 +7038,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 224.41,
-              "per_night": 224.41,
+              "total": 224.74,
+              "per_night": 224.74,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 270.75,
-              "per_night": 270.75,
+              "total": 271.15,
+              "per_night": 271.15,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 290.61,
-              "per_night": 290.61,
+              "total": 291.04,
+              "per_night": 291.04,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 442.86,
-              "per_night": 442.86,
+              "total": 443.52,
+              "per_night": 443.52,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 469.34,
-              "per_night": 469.34,
+              "total": 470.04,
+              "per_night": 470.04,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 502.44,
-              "per_night": 502.44,
+              "total": 503.18,
+              "per_night": 503.18,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 535.54,
-              "per_night": 535.54,
+              "total": 536.33,
+              "per_night": 536.33,
               "rooms_left": 1
             }
           ]
@@ -6981,8 +7101,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 214.26,
-            "per_night": 214.26,
+            "total": 214.58,
+            "per_night": 214.58,
             "rooms_left": 3
           },
           "rooms": [
@@ -6990,56 +7110,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 214.26,
-              "per_night": 214.26,
+              "total": 214.58,
+              "per_night": 214.58,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 258.5,
-              "per_night": 258.5,
+              "total": 258.89,
+              "per_night": 258.89,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 277.46,
-              "per_night": 277.46,
+              "total": 277.87,
+              "per_night": 277.87,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 422.83,
-              "per_night": 422.83,
+              "total": 423.46,
+              "per_night": 423.46,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 448.12,
-              "per_night": 448.12,
+              "total": 448.78,
+              "per_night": 448.78,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 486.04,
-              "per_night": 486.04,
+              "total": 486.76,
+              "per_night": 486.76,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 511.32,
-              "per_night": 511.32,
+              "total": 512.07,
+              "per_night": 512.07,
               "rooms_left": 1
             }
           ]
@@ -7047,6 +7167,78 @@
         {
           "checkin": "2026-12-22",
           "checkout": "2026-12-23",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 225.64,
+            "per_night": 225.64,
+            "rooms_left": 2
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 225.64,
+              "per_night": 225.64,
+              "rooms_left": 2
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 270.89,
+              "per_night": 270.89,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 290.29,
+              "per_night": 290.29,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 438.99,
+              "per_night": 438.99,
+              "rooms_left": 3
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 464.85,
+              "per_night": 464.85,
+              "rooms_left": 2
+            },
+            {
+              "code": "TBSS",
+              "room": "جناح غرفتين سوبيريور",
+              "name_page": "Two bedrooms superior suite",
+              "total": 497.17,
+              "per_night": 497.17,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 529.5,
+              "per_night": 529.5,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2026-12-23",
+          "checkout": "2026-12-24",
           "nights": 1,
           "status": "ok",
           "cheapest": {
@@ -7102,8 +7294,8 @@
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 496.44,
-              "per_night": 496.44,
+              "total": 464.16,
+              "per_night": 464.16,
               "rooms_left": 1
             },
             {
@@ -7117,78 +7309,6 @@
           ]
         },
         {
-          "checkin": "2026-12-23",
-          "checkout": "2026-12-24",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 224.97,
-            "per_night": 224.97,
-            "rooms_left": 2
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 224.97,
-              "per_night": 224.97,
-              "rooms_left": 2
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 270.09,
-              "per_night": 270.09,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 289.43,
-              "per_night": 289.43,
-              "rooms_left": null
-            },
-            {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 437.69,
-              "per_night": 437.69,
-              "rooms_left": 3
-            },
-            {
-              "code": "TBACV",
-              "room": "جناح غرفتين مع إطلالة على المدينة",
-              "name_page": "Two Bedrooms Suite with City View",
-              "total": 463.47,
-              "per_night": 463.47,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBSS",
-              "room": "جناح غرفتين سوبيريور",
-              "name_page": "Two bedrooms superior suite",
-              "total": 463.47,
-              "per_night": 463.47,
-              "rooms_left": 1
-            },
-            {
-              "code": "TBSSC",
-              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
-              "name_page": "Two bedrooms superior suite With City View",
-              "total": 527.94,
-              "per_night": 527.94,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
           "checkin": "2026-12-24",
           "checkout": "2026-12-25",
           "nights": 1,
@@ -7197,8 +7317,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 257.36,
-            "per_night": 257.36,
+            "total": 257.74,
+            "per_night": 257.74,
             "rooms_left": 3
           },
           "rooms": [
@@ -7206,56 +7326,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 257.36,
-              "per_night": 257.36,
+              "total": 257.74,
+              "per_night": 257.74,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 320.28,
-              "per_night": 320.28,
+              "total": 320.76,
+              "per_night": 320.76,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 339.16,
-              "per_night": 339.16,
+              "total": 339.66,
+              "per_night": 339.66,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 477.59,
-              "per_night": 477.59,
+              "total": 478.3,
+              "per_night": 478.3,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 509.05,
-              "per_night": 509.05,
+              "total": 509.81,
+              "per_night": 509.81,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 534.22,
-              "per_night": 534.22,
+              "total": 535.02,
+              "per_night": 535.02,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 565.68,
-              "per_night": 565.68,
+              "total": 566.52,
+              "per_night": 566.52,
               "rooms_left": 1
             }
           ]
@@ -7264,65 +7384,13 @@
           "checkin": "2026-12-25",
           "checkout": "2026-12-26",
           "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 262.86,
-            "per_night": 262.86,
-            "rooms_left": 3
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 262.86,
-              "per_night": 262.86,
-              "rooms_left": 3
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 327.13,
-              "per_night": 327.13,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 346.42,
-              "per_night": 346.42,
-              "rooms_left": null
-            },
-            {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 487.81,
-              "per_night": 487.81,
-              "rooms_left": 3
-            },
-            {
-              "code": "TBACV",
-              "room": "جناح غرفتين مع إطلالة على المدينة",
-              "name_page": "Two Bedrooms Suite with City View",
-              "total": 519.94,
-              "per_night": 519.94,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBSSC",
-              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
-              "name_page": "Two bedrooms superior suite With City View",
-              "total": 577.79,
-              "per_night": 577.79,
-              "rooms_left": 1
-            }
-          ]
+          "status": "no_rooms",
+          "cheapest": null,
+          "rooms": [],
+          "debug": {
+            "url": "https://booking.staygrid.com/webv2/index/selectroom/key/e26dfabfca8b01ef86626f098f43a32317939557086aed977c1d3a6____VEwvO",
+            "page_text": "SAR CORPORATE TRAVEL AGENT GUEST MERYA HOTEL BOOK NOW Previous Next Al Zahra Distrect, Ahmed Al Attas St, Jeddah, Makkah - 123456, Saudi Arabia Map Data 200 m Terms +966126394793 http://www.meryahotels.com 24 Hour Room Service Air Condition"
+          }
         },
         {
           "checkin": "2026-12-26",
@@ -7333,8 +7401,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 211.13,
-            "per_night": 211.13,
+            "total": 211.45,
+            "per_night": 211.45,
             "rooms_left": 3
           },
           "rooms": [
@@ -7342,48 +7410,48 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 211.13,
-              "per_night": 211.13,
+              "total": 211.45,
+              "per_night": 211.45,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 256.06,
-              "per_night": 256.06,
+              "total": 256.44,
+              "per_night": 256.44,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 275.31,
-              "per_night": 275.31,
+              "total": 275.72,
+              "per_night": 275.72,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 422.91,
-              "per_night": 422.91,
+              "total": 423.54,
+              "per_night": 423.54,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 448.58,
-              "per_night": 448.58,
+              "total": 449.25,
+              "per_night": 449.25,
               "rooms_left": 2
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 512.75,
-              "per_night": 512.75,
+              "total": 513.52,
+              "per_night": 513.52,
               "rooms_left": 1
             }
           ]
@@ -7397,8 +7465,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 217.23,
-            "per_night": 217.23,
+            "total": 217.55,
+            "per_night": 217.55,
             "rooms_left": 2
           },
           "rooms": [
@@ -7406,56 +7474,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 217.23,
-              "per_night": 217.23,
+              "total": 217.55,
+              "per_night": 217.55,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 262.08,
-              "per_night": 262.08,
+              "total": 262.47,
+              "per_night": 262.47,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 281.31,
-              "per_night": 281.31,
+              "total": 281.73,
+              "per_night": 281.73,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 428.69,
-              "per_night": 428.69,
+              "total": 429.33,
+              "per_night": 429.33,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 454.32,
-              "per_night": 454.32,
+              "total": 455,
+              "per_night": 455,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 486.36,
-              "per_night": 486.36,
+              "total": 487.08,
+              "per_night": 487.08,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 518.4,
-              "per_night": 518.4,
+              "total": 519.17,
+              "per_night": 519.17,
               "rooms_left": 1
             }
           ]
@@ -7469,8 +7537,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 212.05,
-            "per_night": 212.05,
+            "total": 212.36,
+            "per_night": 212.36,
             "rooms_left": 2
           },
           "rooms": [
@@ -7478,40 +7546,112 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 212.05,
-              "per_night": 212.05,
+              "total": 212.36,
+              "per_night": 212.36,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 255.83,
-              "per_night": 255.83,
+              "total": 256.21,
+              "per_night": 256.21,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 274.6,
-              "per_night": 274.6,
+              "total": 275.01,
+              "per_night": 275.01,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 418.46,
-              "per_night": 418.46,
+              "total": 419.09,
+              "per_night": 419.09,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 443.48,
-              "per_night": 443.48,
+              "total": 444.14,
+              "per_night": 444.14,
+              "rooms_left": 2
+            },
+            {
+              "code": "TBSS",
+              "room": "جناح غرفتين سوبيريور",
+              "name_page": "Two bedrooms superior suite",
+              "total": 481.73,
+              "per_night": 481.73,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 506.79,
+              "per_night": 506.79,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2026-12-29",
+          "checkout": "2026-12-30",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 218.3,
+            "per_night": 218.3,
+            "rooms_left": 2
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 218.3,
+              "per_night": 218.3,
+              "rooms_left": 2
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 262.09,
+              "per_night": 262.09,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 280.85,
+              "per_night": 280.85,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 424.72,
+              "per_night": 424.72,
+              "rooms_left": 3
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 449.74,
+              "per_night": 449.74,
               "rooms_left": 2
             },
             {
@@ -7526,80 +7666,8 @@
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 506.03,
-              "per_night": 506.03,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
-          "checkin": "2026-12-29",
-          "checkout": "2026-12-30",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 217.97,
-            "per_night": 217.97,
-            "rooms_left": 2
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 217.97,
-              "per_night": 217.97,
-              "rooms_left": 2
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 261.69,
-              "per_night": 261.69,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 280.43,
-              "per_night": 280.43,
-              "rooms_left": null
-            },
-            {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 424.08,
-              "per_night": 424.08,
-              "rooms_left": 3
-            },
-            {
-              "code": "TBACV",
-              "room": "جناح غرفتين مع إطلالة على المدينة",
-              "name_page": "Two Bedrooms Suite with City View",
-              "total": 449.07,
-              "per_night": 449.07,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBSS",
-              "room": "جناح غرفتين سوبيريور",
-              "name_page": "Two bedrooms superior suite",
-              "total": 480.29,
-              "per_night": 480.29,
-              "rooms_left": 1
-            },
-            {
-              "code": "TBSSC",
-              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
-              "name_page": "Two bedrooms superior suite With City View",
-              "total": 511.52,
-              "per_night": 511.52,
+              "total": 512.29,
+              "per_night": 512.29,
               "rooms_left": 1
             }
           ]
@@ -7608,17 +7676,89 @@
           "checkin": "2026-12-30",
           "checkout": "2026-12-31",
           "nights": 1,
-          "status": "no_rooms",
-          "cheapest": null,
-          "rooms": [],
-          "debug": {
-            "url": "https://booking.staygrid.com/webv2/index/selectroom/key/e26dfabfca8b01ef86626f098f43a32317938694096aec4661287a9____VEwvO",
-            "page_text": "SAR CORPORATE TRAVEL AGENT GUEST MERYA HOTEL BOOK NOW Previous Next Al Zahra Distrect, Ahmed Al Attas St, Jeddah, Makkah - 123456, Saudi Arabia Map Data 200 m Terms +966126394793 http://www.meryahotels.com 24 Hour Room Service Air Condition"
-          }
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 212.98,
+            "per_night": 212.98,
+            "rooms_left": 3
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 212.98,
+              "per_night": 212.98,
+              "rooms_left": 3
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 255.7,
+              "per_night": 255.7,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 274.01,
+              "per_night": 274.01,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 414.37,
+              "per_night": 414.37,
+              "rooms_left": 3
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 438.78,
+              "per_night": 438.78,
+              "rooms_left": 2
+            },
+            {
+              "code": "TBSS",
+              "room": "جناح غرفتين سوبيريور",
+              "name_page": "Two bedrooms superior suite",
+              "total": 438.78,
+              "per_night": 438.78,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 499.8,
+              "per_night": 499.8,
+              "rooms_left": 1
+            }
+          ]
         },
         {
           "checkin": "2026-12-31",
           "checkout": "2027-01-01",
+          "nights": 1,
+          "status": "no_rooms",
+          "cheapest": null,
+          "rooms": [],
+          "debug": {
+            "url": "https://booking.staygrid.com/webv2/index/selectroom/key/e26dfabfca8b01ef86626f098f43a32317939561196aed99178dffc____VEwvO",
+            "page_text": "SAR CORPORATE TRAVEL AGENT GUEST MERYA HOTEL BOOK NOW Previous Next Al Zahra Distrect, Ahmed Al Attas St, Jeddah, Makkah - 123456, Saudi Arabia Map Data 200 m Terms +966126394793 http://www.meryahotels.com 24 Hour Room Service Air Condition"
+          }
+        },
+        {
+          "checkin": "2027-01-01",
+          "checkout": "2027-01-02",
           "nights": 1,
           "status": "ok",
           "cheapest": {
@@ -7681,70 +7821,6 @@
           ]
         },
         {
-          "checkin": "2027-01-01",
-          "checkout": "2027-01-02",
-          "nights": 1,
-          "status": "ok",
-          "cheapest": {
-            "code": "STD",
-            "room": "ستوديو",
-            "name_page": "Studio",
-            "total": 260.13,
-            "per_night": 260.13,
-            "rooms_left": 2
-          },
-          "rooms": [
-            {
-              "code": "STD",
-              "room": "ستوديو",
-              "name_page": "Studio",
-              "total": 260.13,
-              "per_night": 260.13,
-              "rooms_left": 2
-            },
-            {
-              "code": "OBA",
-              "room": "جناح",
-              "name_page": "Suite",
-              "total": 323.73,
-              "per_night": 323.73,
-              "rooms_left": null
-            },
-            {
-              "code": "OBACV",
-              "room": "جناح غرفة نوم مع إطلالة على المدينة",
-              "name_page": "One Bedroom Suite with City View",
-              "total": 342.81,
-              "per_night": 342.81,
-              "rooms_left": null
-            },
-            {
-              "code": "TBA",
-              "room": "جناح غرفتين",
-              "name_page": "Two Bedrooms Suite",
-              "total": 482.74,
-              "per_night": 482.74,
-              "rooms_left": 3
-            },
-            {
-              "code": "TBACV",
-              "room": "جناح غرفتين مع إطلالة على المدينة",
-              "name_page": "Two Bedrooms Suite with City View",
-              "total": 514.54,
-              "per_night": 514.54,
-              "rooms_left": 2
-            },
-            {
-              "code": "TBSS",
-              "room": "جناح غرفتين سوبيريور",
-              "name_page": "Two bedrooms superior suite",
-              "total": 539.98,
-              "per_night": 539.98,
-              "rooms_left": 1
-            }
-          ]
-        },
-        {
           "checkin": "2027-01-02",
           "checkout": "2027-01-03",
           "nights": 1,
@@ -7753,8 +7829,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 208.93,
-            "per_night": 208.93,
+            "total": 209.25,
+            "per_night": 209.25,
             "rooms_left": 2
           },
           "rooms": [
@@ -7762,56 +7838,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 208.93,
-              "per_night": 208.93,
+              "total": 209.25,
+              "per_night": 209.25,
               "rooms_left": 2
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 253.39,
-              "per_night": 253.39,
+              "total": 253.77,
+              "per_night": 253.77,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 272.44,
-              "per_night": 272.44,
+              "total": 272.85,
+              "per_night": 272.85,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 418.5,
-              "per_night": 418.5,
+              "total": 419.13,
+              "per_night": 419.13,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 443.91,
-              "per_night": 443.91,
+              "total": 444.57,
+              "per_night": 444.57,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 475.66,
-              "per_night": 475.66,
+              "total": 476.38,
+              "per_night": 476.38,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 507.41,
-              "per_night": 507.41,
+              "total": 508.18,
+              "per_night": 508.18,
               "rooms_left": 1
             }
           ]
@@ -7825,8 +7901,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 205.33,
-            "per_night": 205.33,
+            "total": 205.64,
+            "per_night": 205.64,
             "rooms_left": 3
           },
           "rooms": [
@@ -7834,56 +7910,56 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 205.33,
-              "per_night": 205.33,
+              "total": 205.64,
+              "per_night": 205.64,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 247.73,
-              "per_night": 247.73,
+              "total": 248.1,
+              "per_night": 248.1,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 265.9,
-              "per_night": 265.9,
+              "total": 266.3,
+              "per_night": 266.3,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 405.21,
-              "per_night": 405.21,
+              "total": 405.82,
+              "per_night": 405.82,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 429.44,
-              "per_night": 429.44,
+              "total": 430.09,
+              "per_night": 430.09,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 459.72,
-              "per_night": 459.72,
+              "total": 460.42,
+              "per_night": 460.42,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 490.01,
-              "per_night": 490.01,
+              "total": 490.75,
+              "per_night": 490.75,
               "rooms_left": 1
             }
           ]
@@ -7897,8 +7973,8 @@
             "code": "STD",
             "room": "ستوديو",
             "name_page": "Studio",
-            "total": 209.83,
-            "per_night": 209.83,
+            "total": 210.15,
+            "per_night": 210.15,
             "rooms_left": 3
           },
           "rooms": [
@@ -7906,56 +7982,128 @@
               "code": "STD",
               "room": "ستوديو",
               "name_page": "Studio",
-              "total": 209.83,
-              "per_night": 209.83,
+              "total": 210.15,
+              "per_night": 210.15,
               "rooms_left": 3
             },
             {
               "code": "OBA",
               "room": "جناح",
               "name_page": "Suite",
-              "total": 253.16,
-              "per_night": 253.16,
+              "total": 253.54,
+              "per_night": 253.54,
               "rooms_left": null
             },
             {
               "code": "OBACV",
               "room": "جناح غرفة نوم مع إطلالة على المدينة",
               "name_page": "One Bedroom Suite with City View",
-              "total": 271.73,
-              "per_night": 271.73,
+              "total": 272.14,
+              "per_night": 272.14,
               "rooms_left": null
             },
             {
               "code": "TBA",
               "room": "جناح غرفتين",
               "name_page": "Two Bedrooms Suite",
-              "total": 414.09,
-              "per_night": 414.09,
+              "total": 414.71,
+              "per_night": 414.71,
               "rooms_left": 3
             },
             {
               "code": "TBACV",
               "room": "جناح غرفتين مع إطلالة على المدينة",
               "name_page": "Two Bedrooms Suite with City View",
-              "total": 438.85,
-              "per_night": 438.85,
+              "total": 439.51,
+              "per_night": 439.51,
               "rooms_left": 2
             },
             {
               "code": "TBSS",
               "room": "جناح غرفتين سوبيريور",
               "name_page": "Two bedrooms superior suite",
-              "total": 475.99,
-              "per_night": 475.99,
+              "total": 476.7,
+              "per_night": 476.7,
               "rooms_left": 1
             },
             {
               "code": "TBSSC",
               "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
               "name_page": "Two bedrooms superior suite With City View",
-              "total": 500.75,
-              "per_night": 500.75,
+              "total": 501.5,
+              "per_night": 501.5,
+              "rooms_left": 1
+            }
+          ]
+        },
+        {
+          "checkin": "2027-01-05",
+          "checkout": "2027-01-06",
+          "nights": 1,
+          "status": "ok",
+          "cheapest": {
+            "code": "STD",
+            "room": "ستوديو",
+            "name_page": "Studio",
+            "total": 220.97,
+            "per_night": 220.97,
+            "rooms_left": 3
+          },
+          "rooms": [
+            {
+              "code": "STD",
+              "room": "ستوديو",
+              "name_page": "Studio",
+              "total": 220.97,
+              "per_night": 220.97,
+              "rooms_left": 3
+            },
+            {
+              "code": "OBA",
+              "room": "جناح",
+              "name_page": "Suite",
+              "total": 265.29,
+              "per_night": 265.29,
+              "rooms_left": null
+            },
+            {
+              "code": "OBACV",
+              "room": "جناح غرفة نوم مع إطلالة على المدينة",
+              "name_page": "One Bedroom Suite with City View",
+              "total": 284.28,
+              "per_night": 284.28,
+              "rooms_left": null
+            },
+            {
+              "code": "TBA",
+              "room": "جناح غرفتين",
+              "name_page": "Two Bedrooms Suite",
+              "total": 429.91,
+              "per_night": 429.91,
+              "rooms_left": 3
+            },
+            {
+              "code": "TBACV",
+              "room": "جناح غرفتين مع إطلالة على المدينة",
+              "name_page": "Two Bedrooms Suite with City View",
+              "total": 455.24,
+              "per_night": 455.24,
+              "rooms_left": 2
+            },
+            {
+              "code": "TBSS",
+              "room": "جناح غرفتين سوبيريور",
+              "name_page": "Two bedrooms superior suite",
+              "total": 486.89,
+              "per_night": 486.89,
+              "rooms_left": 1
+            },
+            {
+              "code": "TBSSC",
+              "room": "جناح غرفتين سوبيريور مع إطلالة على المدينة",
+              "name_page": "Two bedrooms superior suite With City View",
+              "total": 518.55,
+              "per_night": 518.55,
               "rooms_left": 1
             }
           ]
@@ -7963,5 +8111,5 @@
       ]
     }
   },
-  "summary": "shafa: 59/60 windows ok | zahra: 58/60 windows ok"
+  "summary": "shafa: 60/60 windows ok | zahra: 58/60 windows ok"
 }
