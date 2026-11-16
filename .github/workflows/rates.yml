@@ -2,9 +2,10 @@ name: merya-rates
 
 on:
   schedule:
-    # 01:00 UTC = 04:00 Riyadh; the 120-night scrape takes ~1.5h and must
-    # finish before Respond.io re-syncs the pages at 09:00 Riyadh
-    - cron: '0 1 * * *'
+    # 21:17 UTC = 00:17 Riyadh. GitHub starts scheduled runs ~6h late, so the
+    # ~1.5h scrape still finishes before Respond.io re-syncs at 09:00 Riyadh.
+    # After Riyadh midnight, so the page's "today" is the right date.
+    - cron: '17 21 * * *'
   workflow_dispatch:
     inputs:
       days:
